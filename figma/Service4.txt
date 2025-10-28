@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7eef3] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0e161b]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-[#0e161b] text-lg font-bold leading-tight tracking-[-0.015em]">Care Solutions</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0e161b] text-sm font-medium leading-normal" href="#">Our Services</a>
+              <a class="text-[#0e161b] text-sm font-medium leading-normal" href="#">About Us</a>
+              <a class="text-[#0e161b] text-sm font-medium leading-normal" href="#">Resources</a>
+              <a class="text-[#0e161b] text-sm font-medium leading-normal" href="#">Contact</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#1993e5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Book a Consultation</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#0e161b] tracking-light text-[32px] font-bold leading-tight">Nursing Care Services</p>
+                <p class="text-[#4e7a97] text-sm font-normal leading-normal">
+                  Our nursing care services are designed to provide comprehensive medical support in the comfort of your home. We focus on delivering personalized care plans
+                  tailored to meet the specific needs of each individual, ensuring professional oversight and seamless coordination with other healthcare providers.
+                </p>
+              </div>
+            </div>
+            <h2 class="text-[#0e161b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Types of Medical Services</h2>
+            <p class="text-[#0e161b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              We offer a wide range of medical services, including medication management, wound care, chronic disease management, and post-surgical care. Our skilled nurses are
+              trained to handle complex medical needs and provide compassionate care.
+            </p>
+            <h2 class="text-[#0e161b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Qualifications of Nursing Staff</h2>
+            <p class="text-[#0e161b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Our nursing staff consists of registered nurses (RNs) and licensed practical nurses (LPNs) with extensive experience in various medical specialties. All nurses
+              undergo rigorous background checks and continuous professional development to ensure the highest standards of care.
+            </p>
+            <h2 class="text-[#0e161b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Care Coordination</h2>
+            <p class="text-[#0e161b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              We believe in a collaborative approach to care. Our nurses work closely with physicians, therapists, and other healthcare professionals to develop and implement
+              comprehensive care plans. Regular communication and updates are provided to family members to keep them informed about the care process.
+            </p>
+            <div class="flex px-4 py-3 justify-start">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#1993e5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Book a Consultation</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+
+Product Scope & Requirements Document
+Project Name: Healthcare Services Website
+Prepared for: Eleete Concepts
+Prepared by: TREGAKI
+Date: 07th July 2025
+________________________________________
+1. Project Overview
+Eleete Concepts will design and develop a responsive, user-friendly website to support the business needs of a healthcare services provider. The website will:
+•	Present the company’s services
+•	Allow customers to estimate pricing for services
+•	Accept customer requests and payments
+•	Advertise job vacancies
+•	Integrate with the company’s existing systems
+________________________________________
+2. Project Scope
+Features & Pages to Develop
+Home Page
+•	Hero section with key messaging
+•	Highlights of available services
+•	Contact information / quick links
+•	Testimonials (optional)
+•	Call-to-action buttons
+
+
+
+Contact Us Page
+•	Contact form (Name, Email, Subject, Message)
+•	Map with address
+•	Company contact details
+•	Links to social media
+Vacancies Page
+•	Job listings with:
+o	Job title
+o	Description
+o	Location
+o	Apply button
+•	“Apply” form to capture applicant information and resume
+Services Listing Page
+•	Display of all services offered
+•	For each service:
+o	Service name
+o	Description
+o	Pricing calculator (fields to enter required metrics, e.g. quantity, hours, additional details)
+o	Estimated cost shown dynamically
+•	“Request Service” button
+
+
+
+
+
+Request Service Functionality
+•	A form to collect customer details, including:
+o	Full Name
+o	Email
+o	Phone Number
+o	Address
+o	Service selected
+o	Custom notes
+•	Integration into the payment gateway
+Payment Gateway Integration
+•	Secure checkout (Stripe or PayPal suggested)
+•	Auto-generate receipts emailed to both the customer and the service provider upon successful payment
+•	Confirmation page after payment
+System Redirect Option
+•	After service request or payment, an option to redirect the customer to the company’s internal systems via link or secure API
+________________________________________
+
+
+
+
+
+
+
+
+
+3. Functional Requirements
+Feature	Description
+Responsive design	Must work on desktop, tablet, and mobile
+Pricing calculator	Dynamic service cost estimation based on user-entered metrics
+Secure forms	Validated and protected against spam
+Payment gateway	Secure, PCI-compliant, with receipt automation
+Email notifications	Automatic receipts and confirmations
+Vacancy posting	Easily managed through an admin interface (CMS)
+External redirect	Seamless redirect to existing systems (manual or API-based)
+SEO	Basic search engine optimization best practices
+Analytics	Integration with Google Analytics (optional)
+________________________________________
+4. Non-Functional Requirements
+•	Hosted on client-specified platform
+•	Modern browser compatibility (Chrome, Safari, Firefox, Edge)
+•	Load time under 3 seconds
+•	Secure (HTTPS, secure payment handling, spam protection on forms)
+________________________________________
+
+
+
+
+
+
+7. Assumptions
+•	The client will provide written content, images, and branding guidelines before Day 3
+•	Payment gateway credentials will be provided before Day 18
+•	Client will provide any required API specifications for redirect functionality
+•	Client will provide timely approvals within 1–2 days of requests
+________________________________________
+8. Out of Scope
+•	Advanced CRM or ERP integrations not specified
+•	Domain registration and hosting setup (unless separately contracted)
+•	Ongoing maintenance after handover
+________________________________________
+9. Next Steps
+	Client to review and approve scope.
+	Project kickoff meeting scheduled.
+	Confirm required assets and access credentials.
+________________________________________
+Prepared for: Eleete Concepts
+Prepared by: TREGAKI
+Date: 07th July 2025
+

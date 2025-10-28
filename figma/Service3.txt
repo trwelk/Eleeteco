@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7eef3] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0e161b]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor"></path>
+              </svg>
+            </div>
+            <h2 class="text-[#0e161b] text-lg font-bold leading-tight tracking-[-0.015em]">CareLink</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0e161b] text-sm font-medium leading-normal" href="#">Home</a>
+              <a class="text-[#0e161b] text-sm font-medium leading-normal" href="#">Services</a>
+              <a class="text-[#0e161b] text-sm font-medium leading-normal" href="#">About</a>
+              <a class="text-[#0e161b] text-sm font-medium leading-normal" href="#">Contact</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#1993e5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Book Now</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#0e161b] tracking-light text-[32px] font-bold leading-tight">Temporary Care Solutions</p>
+                <p class="text-[#4e7a97] text-sm font-normal leading-normal">
+                  Whether you need care for a few hours, a few days, or a few weeks, we offer flexible temporary care options to meet your needs. Our services are designed to
+                  provide seamless support during holidays, short-term illnesses, or other temporary situations.
+                </p>
+              </div>
+            </div>
+            <h2 class="text-[#0e161b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Flexible Care Options</h2>
+            <p class="text-[#0e161b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Our temporary care services are tailored to fit your schedule and requirements. Choose from a variety of options, including hourly care, daily visits, or live-in
+              support, ensuring continuous care without long-term commitments.
+            </p>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
+              <div class="text-[#0e161b] flex items-center justify-center rounded-lg bg-[#e7eef3] shrink-0 size-12" data-icon="Clock" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e161b] text-base font-medium leading-normal line-clamp-1">Hourly Care</p>
+                <p class="text-[#4e7a97] text-sm font-normal leading-normal line-clamp-2">
+                  Ideal for short-term needs, such as post-operative care or respite for family caregivers.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
+              <div class="text-[#0e161b] flex items-center justify-center rounded-lg bg-[#e7eef3] shrink-0 size-12" data-icon="Calendar" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e161b] text-base font-medium leading-normal line-clamp-1">Daily Visits</p>
+                <p class="text-[#4e7a97] text-sm font-normal leading-normal line-clamp-2">
+                  Perfect for individuals who require assistance with daily activities but prefer to stay in their own home.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
+              <div class="text-[#0e161b] flex items-center justify-center rounded-lg bg-[#e7eef3] shrink-0 size-12" data-icon="House" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e161b] text-base font-medium leading-normal line-clamp-1">Live-In Care</p>
+                <p class="text-[#4e7a97] text-sm font-normal leading-normal line-clamp-2">
+                  Provides continuous care and support for individuals who need round-the-clock assistance.
+                </p>
+              </div>
+            </div>
+            <h2 class="text-[#0e161b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Seamless Care Transition</h2>
+            <p class="text-[#0e161b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              We ensure a smooth transition into temporary care with a personalized assessment and care plan tailored to your specific needs. Our team works closely with you and
+              your family to provide consistent, high-quality care.
+            </p>
+            <div class="flex px-4 py-3 justify-start">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#1993e5] text-slate-50 text-base font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Book Temporary Care</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

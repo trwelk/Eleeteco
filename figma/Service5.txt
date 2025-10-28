@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden"
+      style='--checkbox-tick-svg: url(&apos;data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(248,250,252)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e&apos;); font-family: "Public Sans", "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7eef3] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#0e161b]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path></svg>
+            </div>
+            <h2 class="text-[#0e161b] text-lg font-bold leading-tight tracking-[-0.015em]">Care Solutions</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0e161b] text-sm font-medium leading-normal" href="#">Our Services</a>
+              <a class="text-[#0e161b] text-sm font-medium leading-normal" href="#">How it Works</a>
+              <a class="text-[#0e161b] text-sm font-medium leading-normal" href="#">About Us</a>
+              <a class="text-[#0e161b] text-sm font-medium leading-normal" href="#">Resources</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#1993e5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Get Started</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#0e161b] tracking-light text-[32px] font-bold leading-tight">Live-In Care</p>
+                <p class="text-[#4e7a97] text-sm font-normal leading-normal">
+                  Live-in care provides personalized support within the comfort of your home, ensuring continuous assistance tailored to your specific needs. This comprehensive
+                  care solution is ideal for individuals requiring ongoing support with daily activities, health management, and companionship.
+                </p>
+              </div>
+            </div>
+            <h2 class="text-[#0e161b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">How Live-In Care Works</h2>
+            <p class="text-[#0e161b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Live-in care involves a dedicated caregiver residing in your home, providing round-the-clock support. This arrangement allows for a highly personalized care plan,
+              adapting to your evolving needs and preferences. Caregivers assist with personal care, medication management, meal preparation, housekeeping, and social activities,
+              ensuring a safe and comfortable environment.
+            </p>
+            <h2 class="text-[#0e161b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Services Offered</h2>
+            <div class="px-4">
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d0dee7] border-2 bg-transparent text-[#1993e5] checked:bg-[#1993e5] checked:border-[#1993e5] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d0dee7] focus:outline-none"
+                />
+                <p class="text-[#0e161b] text-base font-normal leading-normal">Personal Care (bathing, dressing, grooming)</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d0dee7] border-2 bg-transparent text-[#1993e5] checked:bg-[#1993e5] checked:border-[#1993e5] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d0dee7] focus:outline-none"
+                />
+                <p class="text-[#0e161b] text-base font-normal leading-normal">Medication Management</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d0dee7] border-2 bg-transparent text-[#1993e5] checked:bg-[#1993e5] checked:border-[#1993e5] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d0dee7] focus:outline-none"
+                />
+                <p class="text-[#0e161b] text-base font-normal leading-normal">Meal Preparation and Nutrition</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d0dee7] border-2 bg-transparent text-[#1993e5] checked:bg-[#1993e5] checked:border-[#1993e5] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d0dee7] focus:outline-none"
+                />
+                <p class="text-[#0e161b] text-base font-normal leading-normal">Housekeeping and Laundry</p>
+              </label>
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#d0dee7] border-2 bg-transparent text-[#1993e5] checked:bg-[#1993e5] checked:border-[#1993e5] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#d0dee7] focus:outline-none"
+                />
+                <p class="text-[#0e161b] text-base font-normal leading-normal">Companionship and Social Activities</p>
+              </label>
+            </div>
+            <h2 class="text-[#0e161b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Who Benefits from Live-In Care?</h2>
+            <p class="text-[#0e161b] text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Live-in care is suitable for a wide range of individuals, including seniors, those with chronic illnesses, and individuals recovering from surgery or injury. It
+              offers a viable alternative to residential care facilities, allowing individuals to maintain their independence and quality of life in familiar surroundings.
+            </p>
+            <div class="flex px-4 py-3 justify-start">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#1993e5] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Request More Information</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

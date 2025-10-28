@@ -1,0 +1,33 @@
+Post_Installation_Object Safety Report
+================================================================================
+
+Total files scanned: 10733
+Total procedures found: 3
+Safe procedures: 2
+Unsafe procedures: 1
+
+================================================================================
+PROCEDURES WITHOUT SAFETY COMMENT
+================================================================================
+
+File: fndbas\source\fndbas\database\ReportMessageProcessing.plsql
+Line: 1034
+Full Path: C:\work\ifs-applications\workspace\fndbas\source\fndbas\database\ReportMessageProcessing.plsql
+
+Context:
+
+END Create_Triggers;
+
+PROCEDURE Post_Installation_Object IS
+BEGIN
+   Create_Triggers;
+
+--------------------------------------------------------------------------------
+
+
+================================================================================
+PROCEDURES WITH SAFETY COMMENT
+================================================================================
+
+fndbas\source\fndbas\database\AppMessageProcessing.plsql (Line 1800)
+fndbas\source\fndbas\database\JsfProperty.plsql (Line 647)
