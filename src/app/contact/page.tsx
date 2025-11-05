@@ -18,7 +18,7 @@ export default function Contact() {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('/api/send-email-gmail', {
+      const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

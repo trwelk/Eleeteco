@@ -71,52 +71,33 @@ export default function Careers() {
         {/* Introduction */}
         <section className="mb-24 bg-pattern-1 py-16 rounded-3xl">
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white p-8 rounded-xl shadow-lg corner-accent card-enhanced">
-              <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full">
-                <span className="text-sm font-semibold text-blue-700">🌟 Join Our Team</span>
+            <div className="relative overflow-hidden rounded-2xl shadow-lg corner-accent">
+              <div className="absolute inset-0">
+                <CustomImage src="/images/16.jpeg" alt="Why Join Eleete" className="w-full h-full" />
+                <div className="absolute inset-0 bg-white/75 backdrop-blur-sm pointer-events-none" />
               </div>
-              <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                At Eleete Concepts, we don't just provide care, we build relationships, change lives, and make a lasting difference in our community. If you're someone who leads with empathy, takes pride in their work, and believes that every person deserves to be treated with dignity, then you'll feel right at home here.
-              </p>
-              
-              <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto my-6 rounded-full"></div>
-              <h2 className="text-2xl font-bold mb-6 text-center">Why Join Eleete?</h2>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start p-3 bg-gradient-to-r from-blue-50 to-white rounded-lg">
-                  <svg className="w-5 h-5 mr-3 mt-0.5 text-blue-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700">A caring, supportive team where your voice is valued</span>
-                </li>
-                <li className="flex items-start p-3 bg-gradient-to-r from-green-50 to-white rounded-lg">
-                  <svg className="w-5 h-5 mr-3 mt-0.5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700">Ongoing training and development to help you grow in your role</span>
-                </li>
-                <li className="flex items-start p-3 bg-gradient-to-r from-purple-50 to-white rounded-lg">
-                  <svg className="w-5 h-5 mr-3 mt-0.5 text-purple-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700">Flexible hours that fit around your life and commitments</span>
-                </li>
-                <li className="flex items-start p-3 bg-gradient-to-r from-orange-50 to-white rounded-lg">
-                  <svg className="w-5 h-5 mr-3 mt-0.5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700">Opportunities for career progression in a fast-growing care organization</span>
-                </li>
-                <li className="flex items-start p-3 bg-gradient-to-r from-teal-50 to-white rounded-lg">
-                  <svg className="w-5 h-5 mr-3 mt-0.5 text-teal-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-gray-700">Innovation-driven care — including AI-powered tools to support your work and reduce stress</span>
-                </li>
-              </ul>
+              <div className="relative z-10 p-8">
+                <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full">
+                  <span className="text-sm font-semibold text-blue-700">🌟 Join Our Team</span>
+                </div>
+                <p className="text-xl text-gray-700 leading-relaxed mb-8">
+                  At Eleete Concepts, we don't just provide care, we build relationships, change lives, and make a lasting difference in our community. If you're someone who leads with empathy, takes pride in their work, and believes that every person deserves to be treated with dignity, then you'll feel right at home here.
+                </p>
 
-              <p className="text-gray-700 mb-6">
-                Whether you're an experienced carer or just starting out in the care sector, we offer full training and mentoring to help you succeed. Most importantly, we look for people who bring kindness, reliability, and heart to every visit.
-              </p>
+                <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto my-6 rounded-full"></div>
+                <h2 className="text-2xl font-bold mb-6 text-center">Why Join Eleete?</h2>
+                <ul className="space-y-3 mb-8">
+                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">A caring, supportive team where your voice is valued</li>
+                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Ongoing training and development to help you grow in your role</li>
+                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Flexible hours that fit around your life and commitments</li>
+                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Opportunities for career progression in a fast-growing care organization</li>
+                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Innovation-driven care — including AI-powered tools to support your work and reduce stress</li>
+                </ul>
+
+                <p className="text-gray-700 mb-6">
+                  Whether you're an experienced carer or just starting out in the care sector, we offer full training and mentoring to help you succeed. Most importantly, we look for people who bring kindness, reliability, and heart to every visit.
+                </p>
+              </div>
             </div>
           </div>
         </section>
