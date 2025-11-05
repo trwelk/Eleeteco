@@ -170,7 +170,7 @@ export default function About() {
                 <h3 className="text-xl font-bold mb-4 group-hover:text-purple-600 transition-colors">Excellence</h3>
                 <p className="text-gray-600 leading-relaxed">
                 We also embrace the future of care. By integrating AI-powered systems, we enhance the quality and responsiveness of our services. Families can stay informed in real-time, and care
-                plans can adapt quickly — giving our caregivers more tools to care better, and giving families peace of mind.
+                plans can adapt quickly — giving our carers more tools to care better, and giving families peace of mind.
                 </p>
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function About() {
                 </div>
                 <h3 className="text-xl font-bold mb-4 group-hover:text-green-600 transition-colors">Trust</h3>
                 <p className="text-gray-600 leading-relaxed">
-                At Eleete, we know that letting someone into your home — and your life — takes trust. That's why every caregiver we employ is not only fully trained and DBS-checked, but also handpicked for their empathy, patience, and integrity.
+                At Eleete, we know that letting someone into your home — and your life — takes trust. That's why every carer we employ is not only fully trained and DBS-checked, but also handpicked for their empathy, patience, and integrity.
                 We are here for the quiet moments, the daily challenges, and the small victories. We are here to make sure no one feels alone.
                 </p>
               </div>

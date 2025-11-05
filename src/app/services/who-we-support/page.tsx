@@ -26,10 +26,10 @@ const supportCategories: SupportCategory[] = [
     title: "Individuals Living with Dementia or Cognitive Impairment",
     description: "Our specialist dementia care is built on consistency, calm communication, and deep respect. We understand the challenges faced by families and their loved ones living with Alzheimer's or other forms of dementia. Our approach focuses on reassurance, stimulation, and maintaining familiar routines in a safe, supportive environment.",
     services: [
-      "Personalized dementia care plans",
+      "Personalised dementia care plans",
       "Memory stimulation and gentle engagement",
       "Risk management in the home",
-      "Emotional support for families and caregivers",
+      "Emotional support for families and carers",
       "Collaboration with NHS and dementia specialists"
     ]
   },
@@ -86,8 +86,8 @@ const supportCategories: SupportCategory[] = [
     ]
   },
   {
-    title: "Family Caregivers Seeking Respite",
-    description: "Caring for a loved one can be incredibly rewarding — and incredibly demanding. We provide temporary, short-term support so that family caregivers can rest, attend to personal needs, or simply take a break. We ensure complete continuity and reassurance during their time away.",
+    title: "Family Carers Seeking Respite",
+    description: "Caring for a loved one can be incredibly rewarding — and incredibly demanding. We provide temporary, short-term support so that family carers can rest, attend to personal needs, or simply take a break. We ensure complete continuity and reassurance during their time away.",
     services: [
       "Hourly, daily, or live-in care cover",
       "Emergency or planned respite support",
@@ -177,7 +177,7 @@ export default function WhoWeSupport() {
       <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen text-center py-20 bg-gradient-to-br from-white via-blue-50 to-purple-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-6 text-decorated-center relative pb-6 text-blue-900">Your Care, Your Way</h2>
-          <p className="text-gray-700 mb-8 max-w-3xl mx-auto">
+              <p className="text-gray-700 mb-8 max-w-3xl mx-auto">
             Every individual we care for is treated with the same respect, discretion, and professionalism we would expect for our own loved ones. Whether you require basic support or advanced specialist care, we are here to walk alongside you — with clinical excellence and a heart for service.
           </p>
           <div className="space-y-4">

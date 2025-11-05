@@ -33,7 +33,7 @@ const mainServices: ServiceCard[] = [
   },
   {
     title: 'Butler Service',
-    description: 'Personalized assistance to help you manage daily tasks effortlessly.',
+    description: 'Personalised assistance to help you manage daily tasks effortlessly.',
     image: '/images/10.jpeg',
     link: '/services/butler-service'
   }
@@ -52,7 +52,7 @@ const careTypes: CareType[] = [
   },
   {
     title: "Dementia Care",
-    description: "Specialized support for those living with dementia",
+    description: "Specialised support for those living with dementia",
     icon: (
       <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -62,7 +62,7 @@ const careTypes: CareType[] = [
   },
   {
     title: "Respite Care",
-    description: "Short-term support for family caregivers",
+    description: "Short-term support for family carers",
     icon: (
       <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -87,7 +87,7 @@ const testimonials = [
     name: 'Sarah Johnson',
     role: 'Client',
     image: '/images/1.jpeg',
-    quote: 'The care and attention I received was exceptional. The team truly understands the importance of personalized care.',
+    quote: 'The care and attention I received was exceptional. The team truly understands the importance of personalised care.',
   },
   {
     name: 'Emily Davis',
@@ -183,13 +183,13 @@ export default function Home() {
       {/* Types of Care */}
       <section className="relative overflow-hidden animate-fade-up">
         <div className="absolute inset-0">
-          <CustomImage src="/images/15.jpeg" alt="Specialized care background" className="w-full h-full" />
+          <CustomImage src="/images/15.jpeg" alt="Specialised care background" className="w-full h-full" />
           <div className="absolute inset-0 bg-white/70 backdrop-blur-sm pointer-events-none" />
         </div>
         <div className="relative z-10 container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold text-center mb-4 text-decorated-center relative pb-6">Specialized Care Services</h2>
+          <h2 className="text-3xl font-bold text-center mb-4 text-decorated-center relative pb-6">Specialised Care Services</h2>
           <p className="text-gray-700 text-center mb-12 max-w-2xl mx-auto">
-            Our team of professionals provides specialized care services to meet various needs and conditions.
+            Our team of professionals provides specialised care services to meet various needs and conditions.
           </p>
           <div className="grid md:grid-cols-4 gap-6">
             {careTypes.map((care, index) => (

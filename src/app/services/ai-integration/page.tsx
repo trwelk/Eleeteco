@@ -13,7 +13,7 @@ const benefitsByGroup: Benefit[] = [
   {
     title: "For Clients & Families",
     items: [
-      "More personalized and transparent care",
+      "More personalised and transparent care",
       "Early warning for potential health issues",
       "Consistent, high-quality service at every visit"
     ]
@@ -56,7 +56,7 @@ export default function AIIntegration() {
               AI-Enhanced Care
             </h1>
             <p className="text-xl text-gray-100 leading-relaxed">
-              Leveraging technology for smarter, personalized care
+              Leveraging technology for smarter, personalised care
             </p>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function AIIntegration() {
               <p className="text-gray-700">With AI‑enhanced note optimization, visits are documented clearly and professionally. Prompts ensure completeness and clinical standards while reducing admin load.</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg border border-purple-50">
-              <h3 className="text-2xl font-semibold mb-3">Personalized, Dynamic Care Plans</h3>
+              <h3 className="text-2xl font-semibold mb-3">Personalised, Dynamic Care Plans</h3>
               <p className="text-gray-700">Structured plans evolve automatically with reviews and assessments, maintaining compliance and quality as needs change.</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg border border-blue-50">

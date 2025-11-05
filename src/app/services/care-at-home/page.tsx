@@ -60,7 +60,7 @@ export default function CareAtHome() {
               Care At Home
             </h1>
             <p className="text-xl text-gray-100 leading-relaxed">
-              Personalized care in the comfort of your home
+              Personalised care in the comfort of your home
             </p>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function CareAtHome() {
           <div className="p-8 rounded-xl shadow-lg corner-accent">
             <div className="text-center">
               <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full">
-                <span className="text-sm font-semibold text-blue-700">💙 Personalized Home Care</span>
+                <span className="text-sm font-semibold text-blue-700">💙 Personalised Home Care</span>
               </div>
               <p className="text-xl text-gray-700 leading-relaxed mb-6 max-w-4xl mx-auto">
                 People thrive at home. We design flexible, respectful support around your routines, clinical needs, and personal preferences — so life feels safe, dignified, and yours.

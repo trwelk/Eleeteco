@@ -22,14 +22,14 @@ const teamMembers: TeamMember[] = [
   {
     name: 'James Thompson',
     role: 'Operations Manager',
-    bio: 'James ensures our care services run smoothly, coordinating with families and caregivers to deliver exceptional support.',
+    bio: 'James ensures our care services run smoothly, coordinating with families and carers to deliver exceptional support.',
     image: '/images/15.jpeg',
     qualifications: ['BSc Healthcare Management', 'NVQ Level 5 in Leadership']
   },
   {
     name: 'Emily Chen',
     role: 'Senior Care Coordinator',
-    bio: 'Emily works closely with families to create personalized care plans that meet each individual\'s unique needs.',
+    bio: 'Emily works closely with families to create personalised care plans that meet each individual\'s unique needs.',
     image: '/images/16.jpeg',
     qualifications: ['RGN', 'Diploma in Care Management']
   },

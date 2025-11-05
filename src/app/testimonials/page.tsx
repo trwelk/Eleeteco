@@ -19,7 +19,7 @@ const testimonials: Testimonial[] = [
     role: 'Client',
     location: 'Bournemouth',
     image: '/images/1.jpeg',
-    quote: 'The care and attention I received was exceptional. The team truly understands the importance of personalized care. Every carer who visits is professional, kind, and genuinely interested in my wellbeing.',
+    quote: 'The care and attention I received was exceptional. The team truly understands the importance of personalised care. Every carer who visits is professional, kind, and genuinely interested in my wellbeing.',
     rating: 5,
   },
   {
@@ -102,7 +102,7 @@ export default function Testimonials() {
               Each testimonial reflects the trust, connection, and care we strive to build every day — whether it's a reassuring smile, a helping hand, or simply being there when it matters most.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
-              We're honored to share these stories, and grateful for the chance to walk alongside those we care for. Their voices remind us why we do what we do.
+              We're honoured to share these stories, and grateful for the chance to walk alongside those we care for. Their voices remind us why we do what we do.
             </p>
           </div>
         </section>

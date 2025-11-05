@@ -34,7 +34,7 @@ const mainServices: ServiceType[] = [
   },
   {
     title: "Butler Service",
-    description: "Personalized assistance to help you manage daily tasks effortlessly, giving you more time to enjoy what matters most.",
+    description: "Personalised assistance to help you manage daily tasks effortlessly, giving you more time to enjoy what matters most.",
     link: "/services/butler-service",
     icon: (
       <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,7 +54,7 @@ const mainServices: ServiceType[] = [
   },
   {
     title: "Who We Support",
-    description: "Learn about the different groups we help, from older adults to those with specialized care needs.",
+    description: "Learn about the different groups we help, from older adults to those with specialised care needs.",
     link: "/services/who-we-support",
     icon: (
       <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -110,7 +110,7 @@ export default function Services() {
               Types of Care We Offer
             </h1>
             <p className="text-xl text-gray-100 leading-relaxed">
-              Compassionate, personalized care tailored to your unique needs
+              Compassionate, personalised care tailored to your unique needs
             </p>
           </div>
         </div>
@@ -147,12 +147,12 @@ export default function Services() {
         </section>
       </div>
 
-      {/* Personalized Care Approach (now full-width, second) */}
+      {/* Personalised Care Approach (now full-width, second) */}
       <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen py-20 bg-gradient-to-br from-white via-blue-50 to-purple-50">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center">
             <div className="inline-block mb-6 px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-blue-100">
-              <span className="text-sm font-semibold text-blue-700">💙 Personalized Care Approach</span>
+              <span className="text-sm font-semibold text-blue-700">💙 Personalised Care Approach</span>
             </div>
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
               Everyone’s care needs are unique. We listen first, then design a plan that fits your daily routine, clinical needs, and personal preferences.

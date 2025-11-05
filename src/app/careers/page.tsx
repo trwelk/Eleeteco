@@ -90,7 +90,7 @@ export default function Careers() {
                   <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">A caring, supportive team where your voice is valued</li>
                   <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Ongoing training and development to help you grow in your role</li>
                   <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Flexible hours that fit around your life and commitments</li>
-                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Opportunities for career progression in a fast-growing care organization</li>
+                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Opportunities for career progression in a fast-growing care organisation</li>
                   <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Innovation-driven care — including AI-powered tools to support your work and reduce stress</li>
                 </ul>
 
@@ -152,7 +152,7 @@ export default function Careers() {
                 At Eleete Concepts, our team is the heart of everything we do. Behind every care visit is a person who shows up with compassion, professionalism, and a genuine desire to help others live better, more independent lives.
               </p>
               <p className="text-gray-700 mb-6">
-                This page is a space where our caregivers and team members share their stories — in their own words. What it's like to make a difference. How it feels to be part of a supportive, values-driven team. And why working at Eleete is more than just a job.
+                This page is a space where our carers and team members share their stories — in their own words. What it's like to make a difference. How it feels to be part of a supportive, values-driven team. And why working at Eleete is more than just a job.
               </p>
               <p className="text-gray-700 mb-6">
                 Because when we care for our team, they're empowered to care for others — brilliantly.
