@@ -41,26 +41,26 @@ const currentVacancies: JobPosting[] = [
 export default function Careers() {
   return (
     <div className="space-y-16">
-      {/* Hero Section */}
-      <section className="relative h-[500px] w-full">
+      {/* Hero Section - light overlay, full-width content panel */}
+      <section className="relative h-[520px] w-full overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
             src="/images/9.jpeg"
             alt="Careers at Eleete"
             priority
-            className="w-full h-full object-cover"
+            className="w-full h-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/70" />
+          <div className="absolute inset-0 bg-white/40 pointer-events-none" />
         </div>
-        <div className="relative container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-3xl text-white hero-text-enhanced">
-            <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-              <span className="text-sm font-medium">💼 Careers</span>
+        <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
+          <div className="max-w-4xl bg-white/70 backdrop-blur rounded-2xl p-6 md:p-8 shadow-md">
+            <div className="inline-block mb-4 px-4 py-2 bg-white/80 rounded-full border border-blue-200">
+              <span className="text-sm font-medium text-blue-700">💼 Careers</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-blue-900">
               Make a Difference with Eleete
             </h1>
-            <p className="text-xl text-gray-100 leading-relaxed">
+            <p className="text-xl text-gray-800 leading-relaxed">
               Join a team that's changing lives through compassionate care
             </p>
           </div>
