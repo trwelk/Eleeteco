@@ -11,7 +11,7 @@ const TrustBadges = () => {
             <div className="inline-block mb-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-blue-200">
               <span className="text-sm font-semibold text-blue-700">🏅 Accredited & Trusted</span>
             </div>
-            <h3 className="text-gray-700 font-bold text-xl">
+            <h3 className="text-blue-900 font-bold text-xl text-decorated-center relative pb-2">
               Trusted & Regulated Care Provider
             </h3>
           </div>
@@ -32,13 +32,13 @@ const TrustBadges = () => {
             {/* DBS Checked */}
             <div className="flex flex-col items-center text-center group">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl mb-3 w-full h-32 flex items-center justify-center transition-all hover:-translate-y-1 card-enhanced">
-                <div className="text-green-600 transform group-hover:scale-110 transition-transform">
+                <div className="text-blue-600 transform group-hover:scale-110 transition-transform">
                   <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
               </div>
-              <p className="text-sm font-bold text-gray-800 group-hover:text-green-600 transition-colors">DBS Checked</p>
+              <p className="text-sm font-bold text-gray-800 group-hover:text-blue-600 transition-colors">DBS Checked</p>
               <p className="text-xs text-gray-500">All Staff Verified</p>
             </div>
 
@@ -76,15 +76,15 @@ const TrustBadges = () => {
               <div className="text-sm text-gray-600 mt-2 font-medium">Years Experience</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1">
-              <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent">500+</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">500+</div>
               <div className="text-sm text-gray-600 mt-2 font-medium">Families Served</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1">
-              <div className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">98%</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">98%</div>
               <div className="text-sm text-gray-600 mt-2 font-medium">Satisfaction Rate</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1">
-              <div className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">24/7</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-blue-700 to-purple-700 bg-clip-text text-transparent">24/7</div>
               <div className="text-sm text-gray-600 mt-2 font-medium">Care Available</div>
             </div>
           </div>

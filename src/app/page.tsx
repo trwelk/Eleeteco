@@ -100,8 +100,8 @@ const testimonials = [
 export default function Home() {
   return (
     <div className="space-y-16">
-      {/* Hero Section */}
-      <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-r from-blue-100 to-purple-200">
+      {/* Hero Section - layered visuals and subtle animations */}
+      <section className="relative h-[680px] w-full overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
             src="/images/11.jpeg"
@@ -109,22 +109,23 @@ export default function Home() {
             className="w-full h-full"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-transparent pointer-events-none" />
+          {/* Decorative gradient blobs */}
+          <div className="gradient-blob top-10 -left-10 w-72 h-72 rounded-full bg-gradient-to-br from-blue-300/60 to-purple-300/60 animate-float-slow" />
+          <div className="gradient-blob -bottom-16 -right-10 w-80 h-80 rounded-full bg-gradient-to-br from-purple-300/60 to-blue-300/60 animate-float-slow" />
         </div>
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white bg-white/20 p-6 rounded-lg">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">
-              Platinum 60 by Eleete Concepts
-            </h1>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-up">Platinum 60 by Eleete Concepts</h1>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-up anim-delay-200">
               Transforming Lives,
               <br />
               Restoring Your Health
             </h2>
-            <p className="text-xl mb-8 leading-relaxed">
+            <p className="text-xl mb-8 leading-relaxed animate-fade-up anim-delay-400">
               Professional care services delivered with compassion and expertise, in the comfort of your home.
             </p>
-            <div className="space-x-4">
+            <div className="space-x-4 animate-fade-up anim-delay-600">
               <Link
                 href="/services"
                 className="inline-block bg-gradient-to-r from-blue-600 to-blue-800 text-white px-8 py-3 rounded-lg transition-all hover:scale-105 shadow-lg"
@@ -146,7 +147,7 @@ export default function Home() {
       <TrustBadges />
 
       {/* Main Services */}
-      <section className="container mx-auto px-4 bg-pattern-1 py-16 rounded-3xl">
+      <section className="container mx-auto px-4 bg-pattern-1 py-16 rounded-3xl animate-fade-up">
         <div className="relative">
           <h2 className="text-3xl font-bold text-center mb-4 text-decorated-center relative pb-6">Our Care Services</h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
@@ -158,7 +159,7 @@ export default function Home() {
             <Link
               key={index}
               href={service.link}
-              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 overflow-hidden card-enhanced group"
+              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all hover:-translate-y-2 overflow-hidden card-enhanced group animate-fade-up"
             >
               <div className="relative h-48 w-full overflow-hidden">
                 <CustomImage src={service.image} alt={service.title} className="w-full h-full group-hover:scale-110 transition-transform duration-300" />
@@ -180,7 +181,7 @@ export default function Home() {
       </section>
 
       {/* Types of Care */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden animate-fade-up">
         <div className="absolute inset-0">
           <CustomImage src="/images/15.jpeg" alt="Specialized care background" className="w-full h-full" />
           <div className="absolute inset-0 bg-white/70 backdrop-blur-sm pointer-events-none" />
@@ -195,7 +196,7 @@ export default function Home() {
               <Link
                 key={index}
                 href={care.link}
-                className="bg-white/80 backdrop-blur p-6 rounded-xl border border-white/60 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 group"
+                className="bg-white/80 backdrop-blur p-6 rounded-xl border border-white/60 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 group animate-fade-up"
               >
                 <div className="mb-4 transform group-hover:scale-110 transition-transform">
                   {care.icon}
@@ -266,12 +267,12 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="container mx-auto px-4 bg-pattern-4 py-16 rounded-3xl">
+      <section className="container mx-auto px-4 bg-pattern-4 py-16 rounded-3xl animate-fade-up">
         <h2 className="text-3xl font-bold text-center mb-4 text-decorated-center relative pb-6">What Our Clients Say</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Real stories from real families we've had the privilege to serve</p>
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all card-enhanced group">
+            <div key={index} className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all card-enhanced group animate-fade-up">
               <div className="flex items-center mb-6">
                 <div className="relative w-16 h-16 mr-4">
                   <CustomImage

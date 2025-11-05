@@ -117,24 +117,26 @@ export default function LiveInCare() {
         </div>
       </section>
 
-      {/* CTA - Full bleed */}
-      <section className="relative w-full overflow-hidden">
-        <div className="absolute inset-0 w-full h-full">
-          <CustomImage src="/images/20.jpeg" alt="Get Started" className="w-full h-[360px]" />
-          <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 via-transparent to-transparent pointer-events-none" />
-        </div>
-        <div className="relative z-10 flex items-center h-[360px]">
-          <div className="px-6 md:px-10 w-full">
-            <div className="max-w-4xl text-white">
-              <h2 className="text-3xl md:text-4xl font-bold mb-3">Ready to explore Live-In Care?</h2>
-              <p className="text-gray-100 mb-6">Speak to our friendly team today. We will help you build the right plan.</p>
-              <Link href="/contact" className="inline-block bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5">
+      {/* CTA - Light gradient panel (no image) */}
+      <section className="w-full">
+        <div className="container mx-auto px-6 md:px-10 py-16">
+          <div className="text-center bg-gradient-to-br from-white via-blue-50 to-purple-50 rounded-3xl p-10 shadow-md">
+            <div className="inline-block mb-4 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-blue-200">
+              <span className="text-sm font-semibold text-blue-700">✨ Next steps</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-blue-900">Ready to explore Live‑In Care?</h2>
+            <p className="text-gray-700 mb-8 max-w-3xl mx-auto">Speak to our friendly team today. We’ll help you build the right plan.</p>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <Link href="/contact" className="inline-block bg-gradient-to-r from-blue-600 to-purple-700 text-white px-7 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5">
                 Contact Us
               </Link>
-            </div>
+              <Link href="#how" className="inline-block bg-white text-blue-900 border-2 border-blue-200 px-7 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all">
+                How it works
+              </Link>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
     </div>
   );
 }

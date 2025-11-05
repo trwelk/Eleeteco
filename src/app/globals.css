@@ -114,3 +114,29 @@
     background-clip: padding-box, border-box;
   }
 } 
+
+/* Animations */
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float-slow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-fade-up { animation: fade-up 0.8s ease-out both; }
+.animate-float-slow { animation: float-slow 12s ease-in-out infinite; }
+.anim-delay-200 { animation-delay: .2s; }
+.anim-delay-400 { animation-delay: .4s; }
+.anim-delay-600 { animation-delay: .6s; }
+
+/* Decorative gradient blobs for heroes */
+.gradient-blob {
+  position: absolute;
+  filter: blur(40px);
+  opacity: 0.6;
+  pointer-events: none;
+}
