@@ -109,8 +109,8 @@ export default function LiveInCare() {
               { emoji: '❤️', title: 'Couples who wish to stay together at home' },
             ].map((item, i) => (
               <div key={i} className={`bg-white/85 backdrop-blur p-6 rounded-2xl shadow-md border ${i % 2 === 0 ? 'border-blue-100' : 'border-purple-100'} hover:shadow-lg transition-shadow`}>
-                <div className="text-2xl mb-2">{item.emoji}</div>
-                <div className="font-medium text-blue-900 leading-snug">{item.title}</div>
+                <div className="w-10 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-3" />
+                <div className="text-blue-900 font-semibold leading-snug text-lg">{item.title}</div>
               </div>
             ))}
           </div>

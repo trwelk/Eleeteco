@@ -60,15 +60,17 @@ export default function Team() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full bg-gradient-to-r from-blue-100 to-purple-200">
-        <CustomImage
-          src="/images/1.jpeg"
-          alt="Our Team"
-          className="w-full h-full object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-800/50 to-transparent" />
-        <div className="relative container mx-auto px-4 h-full flex items-center">
+      <section className="relative h-[400px] w-full overflow-hidden bg-gradient-to-r from-blue-100 to-purple-200">
+        <div className="absolute inset-0 w-full h-full">
+          <CustomImage
+            src="/images/1.jpeg"
+            alt="Our Team"
+            className="w-full h-full"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-800/50 to-transparent pointer-events-none" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white bg-white/20 p-6 rounded-lg">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Meet Our Team
