@@ -91,7 +91,7 @@ export default function Services() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[500px] w-full">
+      <section className="relative h-[500px] w-full bg-gradient-to-r from-blue-100 to-purple-200">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
             src="/images/13.jpeg"
@@ -99,11 +99,11 @@ export default function Services() {
             priority
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-transparent" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-3xl text-white hero-text-enhanced">
-            <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+          <div className="max-w-3xl text-white bg-white/20 p-6 rounded-lg">
+            <div className="inline-block mb-4 px-4 py-2 bg-white/50 backdrop-blur-sm rounded-full border border-white/20">
               <span className="text-sm font-medium">🏥 Our Services</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -117,45 +117,55 @@ export default function Services() {
       </section>
 
       <div className="container mx-auto px-4">
-        {/* Introduction */}
-        <section className="max-w-4xl mx-auto mb-24 bg-pattern-1 py-16 rounded-3xl">
-          <div className="bg-white p-8 rounded-xl shadow-lg corner-accent mx-4">
-            <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full">
+        {/* Main Services Grid (image-backed like Care at Home) */}
+        <section className="relative mb-24 rounded-3xl overflow-hidden">
+          <div className="absolute inset-0">
+            <CustomImage src="/images/14.jpeg" alt="Services background" className="w-full h-full" />
+            <div className="absolute inset-0 bg-white/70 backdrop-blur-sm pointer-events-none" />
+          </div>
+          <div className="relative z-10 py-16">
+            <h2 className="text-3xl font-bold text-center mb-4 text-decorated-center relative pb-6">Our Care Services</h2>
+            <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">Comprehensive care solutions designed around you</p>
+            <div className="grid md:grid-cols-3 gap-8 px-4">
+              {mainServices.map((service, index) => (
+                <Link
+                  key={index}
+                  href={service.link}
+                  className="bg-white/80 backdrop-blur p-8 rounded-xl border border-white/60 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5 group"
+                >
+                  <div className="flex flex-col items-center text-center">
+                    <div className="transform group-hover:scale-110 transition-transform">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-2xl font-bold mt-4 mb-3 group-hover:text-blue-600 transition-colors">{service.title}</h3>
+                    <p className="text-gray-700 leading-relaxed">{service.description}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Personalized Care Approach (now full-width, second) */}
+      <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen py-20 bg-gradient-to-br from-white via-blue-50 to-purple-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="inline-block mb-6 px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-blue-100">
               <span className="text-sm font-semibold text-blue-700">💙 Personalized Care Approach</span>
             </div>
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              At Eleete Concepts, we understand that every individual's care needs are different — and often deeply personal. That's why we offer a wide range of flexible, tailored home care services, designed to support people at every stage of life and health.
+              Everyone’s care needs are unique. We listen first, then design a plan that fits your daily routine, clinical needs, and personal preferences.
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto my-6 rounded-full"></div>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Our compassionate, DBS-checked carers are trained to deliver high-quality, person-centered support — whether it's a few hours a week or round-the-clock live-in care. From everyday tasks to complex health needs, we're here to help, with dignity and empathy at the heart of everything we do.
+            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              From hourly visits to 24/7 live‑in care, our DBS‑checked professionals deliver consistent, person‑centred support with dignity and respect — so you can feel safe, independent, and fully supported at home.
             </p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Main Services Grid */}
-        <section className="mb-24 bg-pattern-2 py-16 rounded-3xl floating-shapes">
-          <h2 className="text-3xl font-bold text-center mb-4 text-decorated-center relative pb-6">Our Care Services</h2>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Comprehensive care solutions designed around you</p>
-          <div className="grid md:grid-cols-3 gap-8 px-4">
-            {mainServices.map((service, index) => (
-              <Link
-                key={index}
-                href={service.link}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 card-enhanced group"
-              >
-                <div className="flex flex-col items-center text-center">
-                  <div className="transform group-hover:scale-110 transition-transform">
-                    {service.icon}
-                  </div>
-                  <h3 className="text-2xl font-bold mt-4 mb-3 group-hover:text-blue-600 transition-colors">{service.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{service.description}</p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
+      <div className="container mx-auto px-4">
         {/* Cost Calculator */}
         <section className="max-w-4xl mx-auto mb-24 bg-pattern-3 py-16 rounded-3xl">
           <div className="bg-white p-8 rounded-xl shadow-lg corner-accent mx-4 card-enhanced">
@@ -219,15 +229,15 @@ export default function Services() {
           </div>
         </section>
 
-        {/* Call to Action */}
-        <section className="max-w-4xl mx-auto text-center mb-24 bg-pattern-4 py-16 rounded-3xl">
-          <div className="px-4">
+        {/* Call to Action (full-width like Personalized Care Approach) */}
+        <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen text-center mb-24 py-20 bg-gradient-to-br from-white via-blue-50 to-purple-50">
+          <div className="container mx-auto px-4">
             <div className="inline-block mb-4 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-blue-200">
               <span className="text-sm font-semibold text-blue-700">🤝 Let's Talk</span>
             </div>
             <h2 className="text-3xl font-bold mb-6 text-decorated-center relative pb-6">Your Care, Your Way</h2>
-            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Every individual we care for is treated with the same respect, discretion, and professionalism we would expect for our own loved ones. Whether you require basic support or advanced specialist care, we are here to walk alongside you — with clinical excellence and a heart for service.
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
+              Every individual we care for is treated with the same respect, discretion, and professionalism we’d expect for our own loved ones. Whether you need basic support or advanced specialist care, we’re here to walk alongside you — with clinical excellence and a heart for service.
             </p>
             <div className="space-y-4">
               <Link

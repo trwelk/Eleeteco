@@ -85,111 +85,117 @@ const butlerServices: ServiceDetail[] = [
   }
 ];
 
+// Illustrative images to pair with each butler service row
+const butlerImages: string[] = [
+  '/images/6.jpeg',
+  '/images/7.jpeg',
+  '/images/10.jpeg',
+  '/images/11.jpeg',
+  '/images/12.jpeg',
+  '/images/15.jpeg',
+  '/images/16.jpeg',
+  '/images/18.jpeg'
+];
+
 export default function ButlerService() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full">
+      <section className="relative h-[500px] w-full bg-gradient-to-r from-blue-100 to-purple-200">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
-            src="/images/18.jpeg"
+            src="/images/4.jpeg"
             alt="Butler Service"
             priority
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-transparent" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-3xl text-white">
+          <div className="max-w-3xl text-white bg-white/20 p-6 rounded-lg">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Butler Service
             </h1>
-            <p className="text-xl text-gray-100">
-              Personalized Support to Enhance Your Daily Life
+            <p className="text-xl text-gray-100 leading-relaxed">
+              Personalized assistance for everyday tasks
             </p>
           </div>
         </div>
       </section>
 
       <div className="container mx-auto px-4">
-        {/* Introduction */}
-        <section className="max-w-4xl mx-auto mb-24">
-          <div className="bg-white p-8 rounded-xl shadow-lg">
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              At Eleete Concepts Ltd, we understand that the little things make a big difference in maintaining independence and comfort at home. Our Butler Service is designed to provide personalized assistance that helps you manage daily tasks effortlessly, giving you more time to enjoy what matters most.
+        {/* Introduction - wide, subtle image background */}
+        <section className="relative overflow-hidden rounded-3xl mb-24">
+          <div className="absolute inset-0">
+            <CustomImage src="/images/7.jpeg" alt="Lifestyle background" className="w-full h-full" />
+            <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/60 to-white/40 pointer-events-none" />
+          </div>
+          <div className="relative z-10 p-8 md:p-10">
+            <div className="inline-block mb-4 px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-blue-100">
+              <span className="text-sm font-semibold text-blue-700">🧤 Butler Service</span>
+            </div>
+            <p className="text-xl text-gray-800 leading-relaxed max-w-4xl">
+              The little things make a big difference. Our Butler Service offers discreet, personalised help with everyday tasks — so life at home feels effortless, organised, and truly yours.
             </p>
           </div>
         </section>
 
-        {/* Core Features */}
-        <section className="max-w-4xl mx-auto mb-24">
-          <h2 className="text-3xl font-bold mb-12">Our Butler Service Includes:</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-semibold mb-3">Tailored Assistance</h3>
-              <p className="text-gray-600">Our butlers work closely with you to understand your unique needs, offering support with everyday tasks and organizing your schedule.</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-semibold mb-3">Errand Management</h3>
-              <p className="text-gray-600">From collecting prescriptions to arranging transportation or handling personal errands, our butlers take care of the details for you.</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-semibold mb-3">Event and Appointment Coordination</h3>
-              <p className="text-gray-600">Planning special occasions or medical appointments? We help coordinate every detail smoothly and efficiently.</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-semibold mb-3">Home Organization and Oversight</h3>
-              <p className="text-gray-600">Ensuring your home environment stays comfortable and well-managed, including overseeing housekeeping and managing deliveries.</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Detailed Services */}
-        <section className="max-w-4xl mx-auto mb-24">
-          <h2 className="text-3xl font-bold mb-12">Detailed List of Butler Services</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {butlerServices.map((service, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-lg">
-                <div className="flex items-center mb-4">
-                  {service.icon}
-                  <h3 className="text-xl font-semibold ml-3">{service.title}</h3>
+        {/* Core Features - alternating image/text rows (styled like Who We Support) */}
+        <section className="mb-24">
+          <h2 className="text-3xl font-bold text-center mb-6 text-decorated-center relative pb-6">Our Butler Service Includes</h2>
+          <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">Discreet, reliable support that removes friction from your day</p>
+          {butlerServices.map((service, index) => (
+            <div key={index} className="grid md:grid-cols-2 gap-8 items-center py-8">
+              <div className={`relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-md ${index % 2 === 1 ? 'md:order-last' : ''}`}>
+                <CustomImage src={butlerImages[index % butlerImages.length]} alt={service.title} className="w-full h-full" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/10 to-transparent pointer-events-none" />
+              </div>
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-blue-100">
+                <div className="flex items-start gap-4 mb-2">
+                  <div className="shrink-0">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-blue-900">{service.title}</h3>
                 </div>
-                <p className="text-gray-600">{service.description}</p>
+                <p className="text-gray-700 leading-relaxed">{service.description}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </section>
 
-        {/* Why Choose Section */}
-        <section className="max-w-4xl mx-auto mb-24">
-          <h2 className="text-3xl font-bold mb-8">Why Choose Eleete's Butler Service?</h2>
-          <div className="bg-blue-50 p-8 rounded-xl">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <h3 className="text-xl font-semibold mb-3">Professional and Discreet</h3>
-                <p className="text-gray-600">Our butlers are trained professionals dedicated to providing respectful and reliable support.</p>
-              </div>
-              <div className="text-center">
-                <h3 className="text-xl font-semibold mb-3">Person-Centered Care</h3>
-                <p className="text-gray-600">We tailor our services to reflect your preferences and lifestyle, ensuring your comfort and satisfaction.</p>
-              </div>
-              <div className="text-center">
-                <h3 className="text-xl font-semibold mb-3">Peace of Mind</h3>
-                <p className="text-gray-600">With Eleete's Butler Service, you and your family can trust that daily responsibilities are handled with care and attention.</p>
-              </div>
+        
+
+        {/* Why Choose Section - soft gradient with cards */}
+        <section className="mb-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 py-16 rounded-3xl">
+          <h2 className="text-3xl font-bold text-center mb-10 text-decorated-center relative pb-6">Why Choose Eleete’s Butler Service?</h2>
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-2 md:px-4">
+            <div className="bg-white p-6 rounded-xl shadow-md text-center border border-blue-100">
+              <div className="text-2xl mb-2">🎩</div>
+              <h3 className="text-xl font-semibold mb-2">Professional & Discreet</h3>
+              <p className="text-gray-600">Trained professionals delivering respectful, reliable support you can trust.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md text-center border border-purple-100">
+              <div className="text-2xl mb-2">🎯</div>
+              <h3 className="text-xl font-semibold mb-2">Person‑Centred</h3>
+              <p className="text-gray-600">Tailored to your preferences and lifestyle for genuine comfort.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-md text-center border border-blue-100">
+              <div className="text-2xl mb-2">🛡️</div>
+              <h3 className="text-xl font-semibold mb-2">Peace of Mind</h3>
+              <p className="text-gray-600">Daily responsibilities handled carefully so you can focus on what matters.</p>
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="max-w-4xl mx-auto text-center mb-24">
-          <h2 className="text-3xl font-bold mb-6">Experience the Difference</h2>
-          <p className="text-xl text-gray-600 mb-8">
-            Experience the difference personalized, compassionate assistance can make to your daily living. At Eleete Concepts Ltd, our Butler Service is part of our commitment to supporting your independence with dignity and respect.
+        {/* CTA Section - full, light gradient */}
+        <section className="text-center mb-24 py-16 rounded-3xl bg-gradient-to-br from-white via-blue-50 to-purple-50">
+          <h2 className="text-3xl font-bold mb-4 text-decorated-center relative pb-6">Experience the Difference</h2>
+          <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Discover how thoughtful, personalised assistance can simplify your day. Our Butler Service supports your independence with dignity and care.
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+            className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105 shadow-lg"
           >
             Enquire About Butler Service
           </Link>

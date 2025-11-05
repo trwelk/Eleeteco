@@ -47,26 +47,27 @@ export default function About() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[500px] w-full">
+      <section className="relative h-[500px] w-full overflow-hidden bg-gradient-to-r from-blue-100 to-purple-200">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
             src="/images/7.jpeg"
             alt="About Us"
-            priority
             className="w-full h-full"
+            priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-800/50 to-transparent pointer-events-none" />
         </div>
-        <div className="relative container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-3xl text-white hero-text-enhanced">
-            <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+        <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
+          <div className="max-w-3xl text-white bg-white/20 p-6 rounded-lg">
+            <div className="inline-block mb-4 px-4 py-2 bg-white/50 backdrop-blur-sm rounded-full border border-white/20">
               <span className="text-sm font-medium">💙 Our Story</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Elevating Domiciliary Care with Compassion, Innovation, and Heart
-            </h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-3">About Us</h1>
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+              Elevating Domiciliary Care with Compassion, Innovation, and Heart
+            </h2>
             <p className="text-xl text-gray-100 leading-relaxed">
-            Because everyone deserves care that's personal, thoughtful, and truly human.  
+              Everyone deserves care that's personal, thoughtful, and truly human.
             </p>
           </div>
         </div>
@@ -78,8 +79,8 @@ export default function About() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8 text-decorated-center relative pb-6">Our Mission</h2>
             <div className="bg-white p-8 rounded-xl shadow-lg corner-accent">
-              <p className="text-xl text-gray-700 leading-relaxed mb-4">
-              At Eleete Concepts Ltd, care is more than a service — it's a relationship built on trust, compassion, and dignity. As a Dorset-based domiciliary care provider, we are committed to supporting individuals in living independently at home, surrounded by comfort, familiarity, and the people they love.
+              <p className="text-xl text-gray-700 leading-relaxed mb-4 bg-gray-50 p-4 rounded-lg">
+              At Platinum 60 by Eleete Concepts Ltd, care is more than a service — it's a relationship built on trust, compassion, and dignity. As a Dorset-based domiciliary care provider, we are committed to supporting individuals in living independently at home, surrounded by comfort, familiarity, and the people they love.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
               Whether it's helping an elderly parent with daily routines, offering companionship, or supporting someone recovering from illness or managing a complex condition, we're here — with gentle hands, kind hearts, and professional care.
@@ -88,19 +89,23 @@ export default function About() {
           </div>
         </section>
 
-        <section className="mb-24 bg-pattern-2 py-16 rounded-3xl floating-shapes">
-          <div className="max-w-4xl mx-auto text-center">
+        <section className="relative overflow-hidden rounded-3xl mb-24">
+          <div className="absolute inset-0">
+            <CustomImage src="/images/11.jpeg" alt="Legacy background" className="w-full h-full" />
+            <div className="absolute inset-0 bg-white/75 pointer-events-none" />
+          </div>
+          <div className="relative z-10 max-w-4xl mx-auto text-center py-16 px-4">
             <h2 className="text-3xl font-bold mb-8 text-decorated-center relative pb-6">A Legacy of Excellence</h2>
-            <div className="bg-white p-8 rounded-xl shadow-lg card-enhanced">
+            <div className="bg-white/80 backdrop-blur p-8 rounded-xl shadow-lg card-enhanced">
               <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full">
                 <span className="text-sm font-semibold text-blue-700">🌟 Part of Village 60 Plus Family</span>
               </div>
               <p className="text-xl text-gray-700 leading-relaxed">
-              Eleete Concepts proudly operates as a subsidiary of Village 60 Plus, one of Sri Lanka's most respected names in eldercare. With a long-standing legacy of delivering compassionate, person-centred senior living and residential services across Colombo, Village 60 Plus has set the benchmark for care rooted in dignity, clinical excellence, and empathy.
+              Platinum 60 by Eleete Concepts proudly operates as a subsidiary of Village 60 Plus, one of Sri Lanka's most respected names in eldercare. With a long-standing legacy of delivering compassionate, person-centred senior living and residential services across Colombo, Village 60 Plus has set the benchmark for care rooted in dignity, clinical excellence, and empathy.
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto my-6 rounded-full"></div>
               <p className="text-lg text-gray-600 leading-relaxed">
-              Eleete extends this legacy into the UK by bringing the same high standards directly into people's homes — combining our parent company's foundational principles with local insight and modern innovation.
+              Platinum 60 by Eleete Concepts extends this legacy into the UK by bringing the same high standards directly into people's homes — combining our parent company's foundational principles with local insight and modern innovation.
               </p>
             </div>
           </div>

@@ -53,8 +53,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
             <div className="text-2xl font-bold">
-              <span className="text-blue-600">Eleete</span>
-              <span className="text-gray-800"> Concepts</span>
+              <span className="text-blue-600">Platinum 60</span>
+              <span className="text-gray-800"> by Eleete Concepts</span>
             </div>
           </Link>
 

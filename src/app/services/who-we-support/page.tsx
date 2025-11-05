@@ -97,86 +97,105 @@ const supportCategories: SupportCategory[] = [
   }
 ];
 
+// Light illustrative images used alongside categories (cycled if fewer than categories)
+const categoryImages: string[] = [
+  '/images/6.jpeg',
+  '/images/7.jpeg',
+  '/images/10.jpeg',
+  '/images/11.jpeg',
+  '/images/12.jpeg',
+  '/images/15.jpeg',
+  '/images/16.jpeg',
+  '/images/18.jpeg'
+];
+
 export default function WhoWeSupport() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full">
+      <section className="relative h-[500px] w-full overflow-hidden bg-gradient-to-r from-blue-100 to-purple-200">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
-            src="/images/8.jpeg"
+            src="/images/9.jpeg"
             alt="Who We Support"
             priority
-            className="w-full h-full object-cover"
+            className="w-full h-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-transparent pointer-events-none" />
         </div>
-        <div className="relative container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-3xl text-white">
+        <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
+          <div className="max-w-3xl text-white bg-white/20 p-6 rounded-lg">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Who We Support
             </h1>
-            <p className="text-xl text-gray-100">
-              Tailored care for every individual's unique needs
+            <p className="text-xl text-gray-100 leading-relaxed">
+              Dedicated support tailored to diverse needs
             </p>
           </div>
         </div>
       </section>
 
-      <div className="container mx-auto px-4">
-        {/* Introduction */}
-        <section className="max-w-4xl mx-auto mb-24">
-          <div className="bg-white p-8 rounded-xl shadow-lg">
-            <p className="text-xl text-gray-700 leading-relaxed">
+      <section className="relative overflow-hidden rounded-3xl">
+        <div className="absolute inset-0">
+          <CustomImage src="/images/14.jpeg" alt="Support introduction" className="w-full h-full" />
+          <div className="absolute inset-0 bg-white/70 pointer-events-none" />
+        </div>
+        <div className="relative z-10 container mx-auto px-4 py-12">
+          <div className="max-w-5xl bg-white/80 backdrop-blur p-8 rounded-xl shadow-lg mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-blue-900">Who We Support</h2>
+            <p className="text-gray-700">
               At Eleete Concepts, we understand that inviting care into your home is a deeply personal decision — one that requires trust, professionalism, and sensitivity. That's why we tailor every care plan to reflect not just medical needs, but personal values, family dynamics, and individual preferences.
             </p>
           </div>
-        </section>
-
-        {/* Support Categories */}
-        <div className="max-w-4xl mx-auto mb-24">
-          {supportCategories.map((category, index) => (
-            <section key={index} className="mb-12">
-              <div className="bg-white p-8 rounded-xl shadow-lg">
-                <h2 className="text-2xl font-bold mb-4 text-blue-900">{category.title}</h2>
-                <p className="text-gray-700 mb-6">{category.description}</p>
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-semibold mb-4">Services may include:</h3>
-                  <ul className="list-disc list-inside space-y-2">
-                    {category.services.map((service, idx) => (
-                      <li key={idx} className="text-gray-700">{service}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </section>
-          ))}
         </div>
+      </section>
 
-        {/* CTA Section */}
-        <section className="max-w-4xl mx-auto mb-24">
-          <div className="bg-blue-50 p-8 rounded-xl text-center">
-            <h2 className="text-3xl font-bold mb-6">Your Care, Your Way</h2>
-            <p className="text-gray-700 mb-8">
-              Every individual we care for is treated with the same respect, discretion, and professionalism we would expect for our own loved ones. Whether you require basic support or advanced specialist care, we are here to walk alongside you — with clinical excellence and a heart for service.
-            </p>
-            <div className="space-y-4">
-              <Link
-                href="/contact"
-                className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Request Care Consultation
-              </Link>
-              <p className="text-gray-600">
-                Or speak to our care team in confidence at{' '}
-                <a href="mailto:info@eleeteco.uk" className="text-blue-600 hover:text-blue-800">
-                  info@eleeteco.uk
-                </a>
-              </p>
+      {supportCategories.map((category, index) => (
+        <section key={index} className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-8 items-center py-8">
+            <div className={`relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-md ${index % 2 === 1 ? 'md:order-last' : ''}`}>
+              <CustomImage src={categoryImages[index % categoryImages.length]} alt={category.title} className="w-full h-full" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/10 to-transparent pointer-events-none" />
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold mb-4 text-blue-900">{category.title}</h2>
+              <p className="text-gray-700 mb-6">{category.description}</p>
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-blue-100">
+                <h3 className="font-semibold mb-4 text-blue-900">Services may include:</h3>
+                <ul className="list-disc list-inside space-y-2">
+                  {category.services.map((service, idx) => (
+                    <li key={idx} className="text-gray-800">{service}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
-      </div>
+      ))}
+
+      {/* CTA Section */}
+      <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen text-center py-20 bg-gradient-to-br from-white via-blue-50 to-purple-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-6 text-decorated-center relative pb-6 text-blue-900">Your Care, Your Way</h2>
+          <p className="text-gray-700 mb-8 max-w-3xl mx-auto">
+            Every individual we care for is treated with the same respect, discretion, and professionalism we would expect for our own loved ones. Whether you require basic support or advanced specialist care, we are here to walk alongside you — with clinical excellence and a heart for service.
+          </p>
+          <div className="space-y-4">
+            <Link
+              href="/contact"
+              className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105 shadow-lg"
+            >
+              Request Care Consultation
+            </Link>
+            <p className="text-gray-600">
+              Or speak to our care team in confidence at{' '}
+              <a href="mailto:info@eleeteco.uk" className="text-blue-600 hover:text-blue-800 font-medium">
+                info@eleeteco.uk
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

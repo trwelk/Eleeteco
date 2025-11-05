@@ -58,13 +58,13 @@ const TrustBadges = () => {
             {/* Fully Insured */}
             <div className="flex flex-col items-center text-center group">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl mb-3 w-full h-32 flex items-center justify-center transition-all hover:-translate-y-1 card-enhanced">
-                <div className="text-orange-600 transform group-hover:scale-110 transition-transform">
+                <div className="text-blue-600 transform group-hover:scale-110 transition-transform">
                   <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
                 </div>
               </div>
-              <p className="text-sm font-bold text-gray-800 group-hover:text-orange-600 transition-colors">Fully Insured</p>
+              <p className="text-sm font-bold text-gray-800 group-hover:text-blue-600 transition-colors">Fully Insured</p>
               <p className="text-xs text-gray-500">Comprehensive Coverage</p>
             </div>
           </div>

@@ -26,7 +26,7 @@ export default function Rights() {
       <div className="container mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="max-w-4xl mx-auto mb-16">
-          <p className="text-xl text-gray-600 leading-relaxed mb-8">
+          <p className="text-xl text-gray-600 leading-relaxed mb-8 bg-gray-50 p-4 rounded-lg">
             At Eleete, we want every client and family to feel safe, informed, and empowered. As someone receiving domiciliary (home) care in the UK, you have clear legal rights, and we are committed to upholding them in full.
           </p>
         </section>

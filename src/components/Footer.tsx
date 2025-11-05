@@ -13,8 +13,8 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="text-2xl font-bold mb-4">
-              <span className="text-blue-400">Eleete</span>
-              <span> Concepts</span>
+              <span className="text-blue-400">Platinum 60</span>
+              <span> by Eleete Concepts</span>
             </div>
             <p className="text-gray-400 mb-4">
               Elevating domiciliary care with compassion, innovation, and heart.
@@ -171,6 +171,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
 

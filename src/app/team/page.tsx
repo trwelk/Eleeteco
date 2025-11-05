@@ -60,18 +60,16 @@ export default function Team() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full">
-        <div className="absolute inset-0 w-full h-full">
-          <CustomImage
-            src="/images/1.jpeg"
-            alt="Our Team"
-            priority
-            className="w-full h-full"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/70" />
-        </div>
+      <section className="relative h-[400px] w-full bg-gradient-to-r from-blue-100 to-purple-200">
+        <CustomImage
+          src="/images/1.jpeg"
+          alt="Our Team"
+          className="w-full h-full object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-800/50 to-transparent" />
         <div className="relative container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-3xl text-white">
+          <div className="max-w-3xl text-white bg-white/20 p-6 rounded-lg">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Meet Our Team
             </h1>
@@ -193,5 +191,6 @@ export default function Team() {
     </div>
   );
 }
+
 
 
