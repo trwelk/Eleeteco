@@ -26,8 +26,8 @@ export default function LiveInCare() {
                 Compassionate, one-to-one care at home with comfort, dignity and independence.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/contact" className="bg-white text-primary px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5">
-                  Talk to a Care Advisor
+                <Link href="/contact" className="bg-accent text-primary px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-primary hover:text-background transition-all hover:-translate-y-0.5">
+                  Book a Consultation
                 </Link>
                 <Link href="#how" className="bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5">
                   How it works

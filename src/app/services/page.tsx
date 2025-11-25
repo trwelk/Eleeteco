@@ -147,95 +147,173 @@ export default function Services() {
         </section>
 
         {/* What Our Services Include */}
-        <section className="max-w-5xl mx-auto mb-24 bg-white/90 rounded-3xl shadow-lg p-8 md:p-10">
-          <h2 className="text-3xl font-bold mb-4 text-decorated-center relative pb-6">What Our Services Include</h2>
-          <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            At Platinum 60 by Eleete Concepts, we understand that every individual’s care needs are different — and often deeply personal. 
-            That’s why we offer a wide range of flexible, tailored home care services, designed to support people at every stage of life and health.
-          </p>
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Our compassionate, DBS‑checked carers are trained to deliver high‑quality, person‑centred support — whether it’s a few hours a week or round‑the‑clock live‑in care. 
-            From everyday tasks to complex health needs, we’re here to help, with dignity and empathy at the heart of everything we do.
-          </p>
+        <section className="max-w-6xl mx-auto mb-24 bg-gradient-to-br from-white via-background to-secondary/20 rounded-3xl shadow-lg p-8 md:p-12">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-4 text-decorated-center relative pb-6">What Our Services Include</h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-3">
+              At Platinum 60 by Eleete Concepts, we understand that every individual’s care needs are different — and often deeply personal. 
+              That’s why we offer a wide range of flexible, tailored home care services, designed to support people at every stage of life and health.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Our compassionate, DBS‑checked carers are trained to deliver high‑quality, person‑centred support — whether it’s a few hours a week or round‑the‑clock live‑in care. 
+              From everyday tasks to complex health needs, we’re here to help, with dignity and empathy at the heart of everything we do.
+            </p>
+          </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mt-6">
-            <div className="space-y-4">
+          <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Personal Care */}
+            <div className="flex items-start gap-4 bg-white/90 rounded-2xl shadow-md p-5 border border-secondary/30">
+              <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-accent/10 text-accent">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary mb-1">Personal Care</h3>
-                <p className="text-gray-700">
+                <h3 className="text-base font-semibold text-primary mb-1">Personal Care</h3>
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Gentle support with bathing, grooming, dressing, and toileting — always delivered with respect for privacy and independence.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-primary mb-1">Medication Support</h3>
-                <p className="text-gray-700">
-                  Reminders and assistance to ensure medications are taken safely and on time, including coordination with healthcare professionals where needed.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-primary mb-1">Meal Preparation</h3>
-                <p className="text-gray-700">
-                  Nutritious, home‑cooked style meals tailored to individual dietary needs — with help around mealtimes and feeding if required.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-primary mb-1">Companionship</h3>
-                <p className="text-gray-700">
-                  Friendly conversation, emotional support, and shared activities to ease loneliness and promote overall wellbeing.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-primary mb-1">Mobility Assistance</h3>
-                <p className="text-gray-700">
-                  Support with moving safely around the home, using mobility aids, and maintaining physical strength, balance, and confidence.
                 </p>
               </div>
             </div>
 
-            <div className="space-y-4">
+            {/* Medication Support */}
+            <div className="flex items-start gap-4 bg-white/90 rounded-2xl shadow-md p-5 border border-secondary/30">
+              <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-accent/10 text-accent">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary mb-1">Specialist Care</h3>
-                <p className="text-gray-700">
+                <h3 className="text-base font-semibold text-primary mb-1">Medication Support</h3>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Reminders and assistance so medications are taken safely and on time, including coordination with healthcare professionals where needed.
+                </p>
+              </div>
+            </div>
+
+            {/* Meal Preparation */}
+            <div className="flex items-start gap-4 bg-white/90 rounded-2xl shadow-md p-5 border border-secondary/30">
+              <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-accent/10 text-accent">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-base font-semibold text-primary mb-1">Meal Preparation</h3>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Nutritious, home‑style meals tailored to dietary needs — with support at mealtimes and feeding if required.
+                </p>
+              </div>
+            </div>
+
+            {/* Companionship */}
+            <div className="flex items-start gap-4 bg-white/90 rounded-2xl shadow-md p-5 border border-secondary/30">
+              <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-accent/10 text-accent">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-base font-semibold text-primary mb-1">Companionship</h3>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Friendly conversation, emotional support, and shared activities to ease loneliness and boost wellbeing.
+                </p>
+              </div>
+            </div>
+
+            {/* Mobility Assistance */}
+            <div className="flex items-start gap-4 bg-white/90 rounded-2xl shadow-md p-5 border border-secondary/30">
+              <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-accent/10 text-accent">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-base font-semibold text-primary mb-1">Mobility Assistance</h3>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Support with moving safely around the home, using mobility aids, and maintaining strength, balance, and confidence.
+                </p>
+              </div>
+            </div>
+
+            {/* Specialist Care */}
+            <div className="flex items-start gap-4 bg-white/90 rounded-2xl shadow-md p-5 border border-secondary/30">
+              <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-accent/10 text-accent">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-base font-semibold text-primary mb-1">Specialist Care</h3>
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Expert support for dementia and Alzheimer’s, long‑term conditions such as Parkinson’s or diabetes, and palliative care delivered with compassion and dignity.
                 </p>
               </div>
+            </div>
 
+            {/* Post‑Hospital Recovery */}
+            <div className="flex items-start gap-4 bg-white/90 rounded-2xl shadow-md p-5 border border-secondary/30">
+              <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-accent/10 text-accent">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary mb-1">Post‑Hospital Recovery</h3>
-                <p className="text-gray-700">
+                <h3 className="text-base font-semibold text-primary mb-1">Post‑Hospital Recovery</h3>
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Short‑term care following surgery or illness, assisting with rehabilitation, wound care, medication, rest, and safe re‑ablement at home.
                 </p>
               </div>
+            </div>
 
+            {/* Respite Care */}
+            <div className="flex items-start gap-4 bg-white/90 rounded-2xl shadow-md p-5 border border-secondary/30">
+              <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-accent/10 text-accent">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary mb-1">Respite Care</h3>
-                <p className="text-gray-700">
+                <h3 className="text-base font-semibold text-primary mb-1">Respite Care</h3>
+                <p className="text-sm text-gray-700 leading-relaxed">
                   Temporary relief for family caregivers — from a few hours to longer‑term support — so they can rest while we continue their loved one’s routine.
                 </p>
               </div>
+            </div>
 
+            {/* Live‑in Care */}
+            <div className="flex items-start gap-4 bg-white/90 rounded-2xl shadow-md p-5 border border-secondary/30">
+              <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-accent/10 text-accent">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary mb-1">Live‑in Care</h3>
-                <p className="text-gray-700">
+                <h3 className="text-base font-semibold text-primary mb-1">Live‑in Care</h3>
+                <p className="text-sm text-gray-700 leading-relaxed">
                   24‑hour, in‑home support for those needing full‑time help and companionship, without having to move into residential care.
                 </p>
               </div>
+            </div>
 
+            {/* Additional Lifestyle Services */}
+            <div className="flex items-start gap-4 bg-white/90 rounded-2xl shadow-md p-5 border border-secondary/30">
+              <div className="mt-1 flex h-8 w-8 items-center justify-center rounded-full bg-accent/10 text-accent">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary mb-1">Additional Lifestyle Services</h3>
-                <p className="text-gray-700">
-                  Through trusted local partners, we can also arrange grooming and self‑care support (such as nail and hair care), personal assistants and shopping companions, 
+                <h3 className="text-base font-semibold text-primary mb-1">Additional Lifestyle Services</h3>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  Through trusted local partners, we can also arrange grooming and self‑care support, personal assistants and shopping companions, 
                   and wellness services to promote holistic wellbeing.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="mt-8 text-center">
+          <div className="mt-10 text-center">
             <p className="text-gray-700 mb-4">
               No matter what kind of care you need, we’re here to listen and create a plan that works for you and your family — with kindness, flexibility, and professionalism.
             </p>

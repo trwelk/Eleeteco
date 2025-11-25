@@ -58,6 +58,14 @@ export default function AIIntegration() {
             <p className="text-xl text-gray-100 leading-relaxed">
               Leveraging technology for smarter, personalised care
             </p>
+            <div className="mt-6">
+              <Link
+                href="/contact"
+                className="inline-block bg-accent text-primary px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-primary hover:text-background transition-all"
+              >
+                Book a Consultation
+              </Link>
+            </div>
           </div>
         </div>
       </section>

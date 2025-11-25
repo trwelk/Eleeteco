@@ -62,6 +62,14 @@ export default function CareAtHome() {
             <p className="text-lg md:text-xl text-gray-100 leading-relaxed">
               Compassionate support, right where you feel safest — at home.
             </p>
+            <div className="mt-6">
+              <Link
+                href="/contact"
+                className="inline-block bg-accent text-primary px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-primary hover:text-background transition-all"
+              >
+                Book a Consultation
+              </Link>
+            </div>
           </div>
         </div>
       </section>
