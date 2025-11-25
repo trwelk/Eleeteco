@@ -54,10 +54,10 @@ export default function Careers() {
         </div>
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-4xl bg-white/70 backdrop-blur rounded-2xl p-6 md:p-8 shadow-md">
-            <div className="inline-block mb-4 px-4 py-2 bg-white/80 rounded-full border border-blue-200">
-              <span className="text-sm font-medium text-blue-700">💼 Careers</span>
+            <div className="inline-block mb-4 px-4 py-2 bg-white/80 rounded-full border border-secondary/40">
+              <span className="text-sm font-medium text-primary">💼 Careers</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-blue-900">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary">
               Make a Difference with Eleete
             </h1>
             <p className="text-xl text-gray-800 leading-relaxed">
@@ -77,21 +77,21 @@ export default function Careers() {
                 <div className="absolute inset-0 bg-white/75 backdrop-blur-sm pointer-events-none" />
               </div>
               <div className="relative z-10 p-8">
-                <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full">
-                  <span className="text-sm font-semibold text-blue-700">🌟 Join Our Team</span>
+                <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-secondary/20 to-accent/40 rounded-full">
+                  <span className="text-sm font-semibold text-primary">🌟 Join Our Team</span>
                 </div>
                 <p className="text-xl text-gray-700 leading-relaxed mb-8">
                   At Eleete Concepts, we don't just provide care, we build relationships, change lives, and make a lasting difference in our community. If you're someone who leads with empathy, takes pride in their work, and believes that every person deserves to be treated with dignity, then you'll feel right at home here.
                 </p>
 
-                <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto my-6 rounded-full"></div>
+                <div className="w-24 h-1 bg-gradient-to-r from-accent to-secondary mx-auto my-6 rounded-full"></div>
                 <h2 className="text-2xl font-bold mb-6 text-center">Why Join Eleete?</h2>
                 <ul className="space-y-3 mb-8">
-                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">A caring, supportive team where your voice is valued</li>
-                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Ongoing training and development to help you grow in your role</li>
-                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Flexible hours that fit around your life and commitments</li>
-                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Opportunities for career progression in a fast-growing care organisation</li>
-                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-blue-100 text-gray-800">Innovation-driven care — including AI-powered tools to support your work and reduce stress</li>
+                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-secondary/40 text-gray-800">A caring, supportive team where your voice is valued</li>
+                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-secondary/40 text-gray-800">Ongoing training and development to help you grow in your role</li>
+                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-secondary/40 text-gray-800">Flexible hours that fit around your life and commitments</li>
+                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-secondary/40 text-gray-800">Opportunities for career progression in a fast-growing care organisation</li>
+                  <li className="p-4 bg-white/85 backdrop-blur rounded-lg border border-secondary/40 text-gray-800">Innovation-driven care — including AI-powered tools to support your work and reduce stress</li>
                 </ul>
 
                 <p className="text-gray-700 mb-6">
@@ -113,16 +113,16 @@ export default function Careers() {
               {currentVacancies.map((job, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1 card-enhanced group">
                   <div className="flex items-center justify-between mb-3">
-                    <h3 className="text-xl font-bold text-blue-900 group-hover:text-blue-600 transition-colors">{job.title}</h3>
-                    <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <h3 className="text-xl font-bold text-primary group-hover:text-accent transition-colors">{job.title}</h3>
+                    <div className="w-10 h-10 bg-secondary/30 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <svg className="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </div>
                   </div>
                   <div className="space-y-2 mb-4">
                     <p className="text-gray-600 flex items-center">
-                      <svg className="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className="w-4 h-4 mr-2 text-accent" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                       </svg>
                       <strong>Location:</strong> <span className="ml-1">{job.location}</span>
@@ -164,8 +164,8 @@ export default function Careers() {
         {/* Apply Now CTA */}
         <section className="mb-24 bg-pattern-4 py-16 rounded-3xl floating-shapes">
           <div className="max-w-4xl mx-auto text-center px-4">
-            <div className="inline-block mb-4 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-blue-200">
-              <span className="text-sm font-semibold text-blue-700">🚀 Join Us Today</span>
+            <div className="inline-block mb-4 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-secondary/40">
+              <span className="text-sm font-semibold text-primary">🚀 Join Us Today</span>
             </div>
             <h2 className="text-3xl font-bold mb-6 text-decorated-center relative pb-6">Ready to make a real difference?</h2>
             <p className="text-xl text-gray-700 mb-8">
@@ -174,13 +174,13 @@ export default function Careers() {
             <div className="space-y-4">
               <Link
                 href="#current-vacancies"
-                className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105 shadow-lg"
+                className="inline-block bg-gradient-to-r from-primary to-accent text-white px-8 py-3 rounded-lg hover:from-primary hover:to-primary transition-all hover:scale-105 shadow-lg"
               >
                 View Current Openings
               </Link>
               <p className="text-gray-600">
                 Or send your CV and a short message to{' '}
-                <a href="mailto:info@eleeteco.uk" className="text-blue-600 hover:text-blue-800 font-medium">
+                <a href="mailto:info@eleeteco.uk" className="text-accent hover:text-primary font-medium">
                   info@eleeteco.uk
                 </a>
               </p>

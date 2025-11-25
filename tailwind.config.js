@@ -6,7 +6,14 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#0E1A2B',      // Midnight Blue
+        secondary: '#C7C9C7',    // Platinum Silver
+        accent: '#D4AF37',       // Soft Gold
+        background: '#F7F7F7',   // Light Background
+      },
+    },
   },
   plugins: [],
 } 

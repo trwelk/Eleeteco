@@ -8,8 +8,8 @@ export default function Rights() {
     <div className="space-y-16">
       {/* Hero Section */}
       <section className="relative h-[300px] w-full">
-        <div className="absolute inset-0 bg-blue-900">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/70" />
+        <div className="absolute inset-0 bg-primary">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white">
@@ -48,7 +48,7 @@ export default function Rights() {
             <Link 
               href="https://www.gov.uk/government/publications/homecare-a-guide-for-people-receiving-homecare"
               target="_blank"
-              className="text-blue-600 hover:text-blue-800 font-medium"
+              className="text-accent hover:text-primary font-medium"
             >
               Learn more from GOV.UK: Homecare (domiciliary care) →
             </Link>
@@ -83,7 +83,7 @@ export default function Rights() {
             <Link 
               href="https://www.gov.uk/getting-help-from-social-services"
               target="_blank"
-              className="text-blue-600 hover:text-blue-800 font-medium"
+              className="text-accent hover:text-primary font-medium"
             >
               More on your choices: GOV.UK - Getting help from social services →
             </Link>
@@ -103,7 +103,7 @@ export default function Rights() {
             <Link 
               href="https://www.nhs.uk/using-the-nhs/about-the-nhs/how-to-complain-to-the-nhs/"
               target="_blank"
-              className="text-blue-600 hover:text-blue-800 font-medium"
+              className="text-accent hover:text-primary font-medium"
             >
               Learn how to complain: NHS – How to complain about adult social care →
             </Link>
@@ -120,7 +120,7 @@ export default function Rights() {
                 <Link 
                   href="https://www.citizensadvice.org.uk/"
                   target="_blank"
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-accent hover:text-primary"
                 >
                   Citizens Advice
                 </Link>
@@ -129,7 +129,7 @@ export default function Rights() {
                 <Link 
                   href="https://www.cqc.org.uk/"
                   target="_blank"
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-accent hover:text-primary"
                 >
                   Care Quality Commission (CQC)
                 </Link>
@@ -138,7 +138,7 @@ export default function Rights() {
                 <Link 
                   href="https://www.lgo.org.uk/"
                   target="_blank"
-                  className="text-blue-600 hover:text-blue-800"
+                  className="text-accent hover:text-primary"
                 >
                   Local Government Ombudsman
                 </Link>
@@ -147,14 +147,14 @@ export default function Rights() {
           </section>
 
           {/* We're Here to Help */}
-          <section className="bg-blue-50 p-8 rounded-xl text-center">
+          <section className="bg-background p-8 rounded-xl text-center">
             <h2 className="text-2xl font-bold mb-4">We're Here to Help</h2>
             <p className="text-gray-600">
               If you're unsure about your rights or want to speak to someone about your care, please contact us directly. We're always here to listen and support you.
             </p>
             <Link 
               href="/contact"
-              className="inline-block mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              className="inline-block mt-6 px-6 py-3 bg-accent text-primary rounded-lg hover:bg-primary hover:text-background transition-colors"
             >
               Contact Us
             </Link>

@@ -44,7 +44,7 @@ export default function CareAtHome() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden bg-gradient-to-r from-blue-100 to-purple-200">
+      <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden bg-gradient-to-r from-background to-secondary/60">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
             src="/images/3.jpeg"
@@ -52,15 +52,15 @@ export default function CareAtHome() {
             priority
             className="w-full h-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent pointer-events-none" />
         </div>
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white bg-white/20 p-6 rounded-lg">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Care At Home
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Care at Home
             </h1>
-            <p className="text-xl text-gray-100 leading-relaxed">
-              Personalised care in the comfort of your home
+            <p className="text-lg md:text-xl text-gray-100 leading-relaxed">
+              Compassionate support, right where you feel safest — at home.
             </p>
           </div>
         </div>
@@ -68,18 +68,21 @@ export default function CareAtHome() {
 
       <div className="container mx-auto px-4">
         {/* Introduction */}
-        <section className="mb-24 bg-gradient-to-br from-blue-50 via-white to-purple-50 py-16 rounded-3xl">
+        <section className="mb-24 bg-gradient-to-br from-background via-white to-secondary/40 py-16 rounded-3xl">
           <div className="p-8 rounded-xl shadow-lg corner-accent">
             <div className="text-center">
-              <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full">
-                <span className="text-sm font-semibold text-blue-700">💙 Personalised Home Care</span>
+              <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-secondary/20 to-accent/40 rounded-full">
+                <span className="text-sm font-semibold text-primary">💙 Personalised Home Care</span>
               </div>
-              <p className="text-xl text-gray-700 leading-relaxed mb-6 max-w-4xl mx-auto">
-                People thrive at home. We design flexible, respectful support around your routines, clinical needs, and personal preferences — so life feels safe, dignified, and yours.
+              <p className="text-xl text-gray-700 leading-relaxed mb-4 max-w-4xl mx-auto">
+                At Platinum 60 by Eleete Concepts, our Care at Home service is built around a simple belief: people thrive when they can remain in the comfort of their own home, surrounded by familiarity and dignity.
               </p>
-              <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto my-6 rounded-full"></div>
+              <p className="text-lg text-gray-700 leading-relaxed mb-4 max-w-4xl mx-auto">
+                We provide professional, flexible, and respectful support tailored to your individual needs, routines, and lifestyle. Whether you require a little help each day or more regular support, our trained and DBS‑checked carers are here to assist with kindness, discretion, and consistency.
+              </p>
+              <div className="w-24 h-1 bg-gradient-to-r from-accent to-secondary mx-auto my-6 rounded-full"></div>
               <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                From a little daily help to regular scheduled visits, our DBS‑checked carers provide consistent, person‑centred support with kindness and discretion.
+                From a little daily help to regular scheduled visits, our team will work with you and your family to build a care plan that feels natural, respectful, and truly supportive.
               </p>
             </div>
           </div>
@@ -93,11 +96,13 @@ export default function CareAtHome() {
           </div>
           <div className="relative z-10 px-4 py-16">
             <h2 className="text-3xl font-bold mb-4 text-center text-decorated-center relative pb-6">What We Offer</h2>
-            <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">Comprehensive support tailored to your needs</p>
+            <p className="text-center text-gray-700 mb-2 max-w-2xl mx-auto">
+              Our Care at Home services include a wide range of support options to suit your situation:
+            </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {careServices.map((service, index) => (
                 <div key={index} className="bg-white/80 backdrop-blur p-6 rounded-xl border border-white/60 shadow-md hover:shadow-lg transition-all hover:-translate-y-0.5">
-                  <h3 className="text-xl font-semibold mb-2 text-blue-900">{service.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-primary">{service.title}</h3>
                   <p className="text-gray-700 leading-relaxed">{service.description}</p>
                 </div>
               ))}
@@ -114,16 +119,24 @@ export default function CareAtHome() {
         <section className="relative overflow-hidden rounded-3xl mb-24">
           <div className="absolute inset-0">
             <CustomImage src="/images/15.jpeg" alt="Care at Home" className="w-full h-full" />
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/30 via-blue-900/10 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/70 via-primary/20 to-transparent pointer-events-none" />
           </div>
           <div className="relative z-10 container mx-auto px-4 py-16">
             <div className="max-w-5xl mx-auto bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-900">Care At Home</h2>
-              <p className="text-lg md:text-xl text-gray-900 leading-relaxed mb-6">
-                Staying at home means keeping your rhythms, comforts, and independence. We tailor a plan around you — practical support, clinical tasks, and warm companionship.
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">Who We Help</h2>
+              <p className="text-lg md:text-xl text-gray-900 leading-relaxed mb-4">
+                Our Care at Home service is ideal for:
               </p>
+              <ul className="list-disc list-inside text-gray-900 space-y-2 mb-4">
+                <li>Older adults wishing to maintain independence at home</li>
+                <li>People living with physical disabilities or chronic conditions</li>
+                <li>Individuals recovering from illness, injury, or surgery</li>
+                <li>Those in need of personal or practical support throughout the day</li>
+                <li>Families looking for peace of mind and regular updates</li>
+              </ul>
               <p className="text-gray-900">
-                Need a little help or more regular visits? Our trained, DBS‑checked carers provide reliable, respectful care you can trust.
+                Whether you're arranging care for yourself or a loved one, we know that trust, continuity, and respect are essential. 
+                That’s why we take the time to match you with a carer who fits not just your clinical needs, but your personality and values too.
               </p>
             </div>
           </div>
@@ -134,15 +147,21 @@ export default function CareAtHome() {
           <div className="px-4">
             <h2 className="text-3xl font-bold mb-8 text-center text-decorated-center relative pb-6">How to Get Started</h2>
             <div className="bg-white p-8 rounded-xl shadow-lg card-enhanced max-w-6xl mx-auto">
-              <p className="text-gray-700 mb-8 text-center">We make arranging care simple and stress‑free.</p>
+              <p className="text-gray-700 mb-8 text-center">
+                We make the process of arranging care simple and stress‑free.
+              </p>
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="p-6 rounded-lg border border-blue-100 bg-gradient-to-br from-blue-50 to-white">
+                <div className="p-6 rounded-lg border border-secondary/40 bg-gradient-to-br from-background to-white">
                   <h3 className="text-xl font-semibold mb-2">1. Speak to us</h3>
-                  <p className="text-gray-700">Tell us about your situation. We’ll offer guidance and arrange a free home assessment.</p>
+                  <p className="text-gray-700">
+                    Tell us about your situation. We’ll offer guidance and arrange a free, no‑obligation home assessment.
+                  </p>
                 </div>
-                <div className="p-6 rounded-lg border border-purple-100 bg-gradient-to-br from-purple-50 to-white">
+                <div className="p-6 rounded-lg border border-secondary/40 bg-gradient-to-br from-background to-white">
                   <h3 className="text-xl font-semibold mb-2">2. Request care online</h3>
-                  <p className="text-gray-700">Prefer online? Send a quick request — we’ll follow up to plan next steps together.</p>
+                  <p className="text-gray-700">
+                    Submit a quick request through our website — we’ll contact you to confirm details and plan next steps together.
+                  </p>
                 </div>
               </div>
             </div>
@@ -152,8 +171,8 @@ export default function CareAtHome() {
         {/* CTA */}
         <section className="mb-24 bg-pattern-5 py-16 rounded-3xl floating-shapes">
           <div className="px-4 text-center">
-            <div className="inline-block mb-4 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-blue-200">
-              <span className="text-sm font-semibold text-blue-700">🚀 Get Started Today</span>
+            <div className="inline-block mb-4 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-secondary/40">
+              <span className="text-sm font-semibold text-primary">🚀 Get Started Today</span>
             </div>
             <h2 className="text-3xl font-bold mb-6 text-decorated-center relative pb-6">Start Your Care Journey</h2>
             <p className="text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -161,7 +180,7 @@ export default function CareAtHome() {
             </p>
             <Link
               href="/contact"
-              className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105 shadow-lg"
+              className="inline-block bg-gradient-to-r from-primary to-accent text-white px-8 py-3 rounded-lg hover:from-primary hover:to-primary transition-all hover:scale-105 shadow-lg"
             >
               Request Your Free Assessment
             </Link>

@@ -15,7 +15,7 @@ const butlerServices: ServiceDetail[] = [
     title: "Personal Shopping & Errands",
     description: "Grocery shopping, pharmacy pickups, dry cleaning collection, post office runs, and other essential errands.",
     icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
       </svg>
     )
@@ -24,7 +24,7 @@ const butlerServices: ServiceDetail[] = [
     title: "Personal Grooming & Nail Care",
     description: "Supporting personal grooming needs for both men and women, including hair care, shaving, skincare routines, dressing assistance, and nail care such as manicures and pedicures.",
     icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
       </svg>
     )
@@ -33,7 +33,7 @@ const butlerServices: ServiceDetail[] = [
     title: "Appointment Management",
     description: "Scheduling, reminders, and transport arrangements for medical, social, or recreational appointments.",
     icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
       </svg>
     )
@@ -42,7 +42,7 @@ const butlerServices: ServiceDetail[] = [
     title: "Meal Planning & Coordination",
     description: "Assisting with meal prep coordination or liaising with catering services.",
     icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
       </svg>
     )
@@ -51,7 +51,7 @@ const butlerServices: ServiceDetail[] = [
     title: "Home Maintenance Liaison",
     description: "Coordinating with service providers for home repairs, cleaning, gardening, and deliveries.",
     icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
     )
@@ -60,7 +60,7 @@ const butlerServices: ServiceDetail[] = [
     title: "Travel & Transport Assistance",
     description: "Booking taxis, arranging airport pickups, or accompanying clients on outings when needed.",
     icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
       </svg>
     )
@@ -69,7 +69,7 @@ const butlerServices: ServiceDetail[] = [
     title: "Event Planning & Hospitality",
     description: "Organising social gatherings, family visits, or special occasions with attention to every detail.",
     icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
       </svg>
     )
@@ -78,7 +78,7 @@ const butlerServices: ServiceDetail[] = [
     title: "Mail and Communication Management",
     description: "Sorting mail, managing phone calls, and helping with correspondence as required.",
     icon: (
-      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     )
@@ -101,7 +101,7 @@ export default function ButlerService() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[500px] w-full bg-gradient-to-r from-blue-100 to-purple-200">
+      <section className="relative h-[500px] w-full bg-gradient-to-r from-background to-secondary/60">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
             src="/images/4.jpeg"
@@ -109,7 +109,7 @@ export default function ButlerService() {
             priority
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white bg-white/20 p-6 rounded-lg">
@@ -131,11 +131,16 @@ export default function ButlerService() {
             <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/60 to-white/40 pointer-events-none" />
           </div>
           <div className="relative z-10 p-8 md:p-10">
-            <div className="inline-block mb-4 px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-blue-100">
-              <span className="text-sm font-semibold text-blue-700">🧤 Butler Service</span>
+            <div className="inline-block mb-4 px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-secondary/40">
+              <span className="text-sm font-semibold text-primary">🧤 Butler Service: Personalised Support</span>
             </div>
-            <p className="text-xl text-gray-800 leading-relaxed max-w-4xl">
-              The little things make a big difference. Our Butler Service offers discreet, personalised help with everyday tasks — so life at home feels effortless, organised, and truly yours.
+            <p className="text-xl text-gray-800 leading-relaxed max-w-4xl mb-4">
+              At Eleete Concepts Ltd, we understand that the little things make a big difference in maintaining independence and comfort at home. 
+              Our Butler Service is designed to provide personalised assistance that helps you manage daily tasks effortlessly, giving you more time to enjoy what matters most.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
+              Your butler works closely with you to understand your unique needs, offering support with everyday tasks, managing errands, coordinating events and appointments, 
+              and overseeing the smooth running of your home so everything feels organised and under control.
             </p>
           </div>
         </section>
@@ -148,14 +153,14 @@ export default function ButlerService() {
             <div key={index} className="grid md:grid-cols-2 gap-8 items-center py-8">
               <div className={`relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-md ${index % 2 === 1 ? 'md:order-last' : ''}`}>
                 <CustomImage src={butlerImages[index % butlerImages.length]} alt={service.title} className="w-full h-full" />
-                <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/10 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/40 to-transparent pointer-events-none" />
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-blue-100">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-secondary/40">
                 <div className="flex items-start gap-4 mb-2">
                   <div className="shrink-0">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-semibold text-blue-900">{service.title}</h3>
+                  <h3 className="text-xl font-semibold text-primary">{service.title}</h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed">{service.description}</p>
               </div>
@@ -166,20 +171,20 @@ export default function ButlerService() {
         
 
         {/* Why Choose Section - soft gradient with cards */}
-        <section className="mb-24 bg-gradient-to-br from-white via-blue-50 to-purple-50 py-16 rounded-3xl">
+        <section className="mb-24 bg-gradient-to-br from-white via-background to-secondary/40 py-16 rounded-3xl">
           <h2 className="text-3xl font-bold text-center mb-10 text-decorated-center relative pb-6">Why Choose Eleete’s Butler Service?</h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-2 md:px-4">
-            <div className="bg-white p-6 rounded-xl shadow-md text-center border border-blue-100">
+            <div className="bg-white p-6 rounded-xl shadow-md text-center border border-secondary/40">
               <div className="text-2xl mb-2">🎩</div>
               <h3 className="text-xl font-semibold mb-2">Professional & Discreet</h3>
               <p className="text-gray-600">Trained professionals delivering respectful, reliable support you can trust.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-md text-center border border-purple-100">
+            <div className="bg-white p-6 rounded-xl shadow-md text-center border border-secondary/40">
               <div className="text-2xl mb-2">🎯</div>
               <h3 className="text-xl font-semibold mb-2">Person‑Centred</h3>
               <p className="text-gray-600">Tailored to your preferences and lifestyle for genuine comfort.</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-md text-center border border-blue-100">
+            <div className="bg-white p-6 rounded-xl shadow-md text-center border border-secondary/40">
               <div className="text-2xl mb-2">🛡️</div>
               <h3 className="text-xl font-semibold mb-2">Peace of Mind</h3>
               <p className="text-gray-600">Daily responsibilities handled carefully so you can focus on what matters.</p>
@@ -188,14 +193,14 @@ export default function ButlerService() {
         </section>
 
         {/* CTA Section - full, light gradient */}
-        <section className="text-center mb-24 py-16 rounded-3xl bg-gradient-to-br from-white via-blue-50 to-purple-50">
+        <section className="text-center mb-24 py-16 rounded-3xl bg-gradient-to-br from-white via-background to-secondary/40">
           <h2 className="text-3xl font-bold mb-4 text-decorated-center relative pb-6">Experience the Difference</h2>
           <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
             Discover how thoughtful, personalised assistance can simplify your day. Our Butler Service supports your independence with dignity and care.
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105 shadow-lg"
+            className="inline-block bg-gradient-to-r from-primary to-accent text-white px-8 py-3 rounded-lg hover:from-primary hover:to-primary transition-all hover:scale-105 shadow-lg"
           >
             Enquire About Butler Service
           </Link>

@@ -42,13 +42,13 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-pattern-1">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 via-blue-700 to-purple-600 text-white py-16">
+      <div className="bg-gradient-to-r from-primary via-primary to-accent text-white py-16">
         <div className="container mx-auto px-4 text-center hero-text-enhanced">
           <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
             <span className="text-sm font-medium">📞 Contact Us</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
-          <p className="text-xl text-blue-100 leading-relaxed">We're here to answer your questions and discuss your care needs</p>
+          <p className="text-xl text-secondary leading-relaxed">We're here to answer your questions and discuss your care needs</p>
         </div>
       </div>
 
@@ -59,8 +59,8 @@ export default function Contact() {
           {/* Contact Information */}
           <div>
             <div className="bg-white p-8 rounded-xl shadow-lg mb-8 card-enhanced hover:shadow-xl transition-shadow">
-            <div className="inline-block mb-4 px-3 py-1 bg-blue-100 rounded-full">
-              <span className="text-sm font-semibold text-blue-700">🏢 Location</span>
+            <div className="inline-block mb-4 px-3 py-1 bg-secondary/20 rounded-full">
+              <span className="text-sm font-semibold text-primary">🏢 Location</span>
             </div>
             <h2 className="text-2xl font-bold mb-4">Our Office</h2>
             <div className="space-y-4">
@@ -135,8 +135,8 @@ export default function Contact() {
 
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-xl shadow-lg card-enhanced hover:shadow-xl transition-shadow">
-          <div className="inline-block mb-4 px-3 py-1 bg-purple-100 rounded-full">
-            <span className="text-sm font-semibold text-purple-700">✉️ Message</span>
+          <div className="inline-block mb-4 px-3 py-1 bg-secondary/20 rounded-full">
+            <span className="text-sm font-semibold text-primary">✉️ Message</span>
           </div>
           <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -183,7 +183,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105 disabled:bg-gray-400 disabled:cursor-not-allowed shadow-lg"
+              className="w-full bg-gradient-to-r from-primary to-accent text-white py-3 rounded-lg hover:from-primary hover:to-primary transition-all hover:scale-105 disabled:bg-gray-400 disabled:cursor-not-allowed shadow-lg"
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>

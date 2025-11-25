@@ -47,7 +47,7 @@ export default function About() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[500px] w-full overflow-hidden bg-gradient-to-r from-blue-100 to-purple-200">
+      <section className="relative h-[500px] w-full overflow-hidden bg-gradient-to-r from-background to-secondary/60">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
             src="/images/7.jpeg"
@@ -55,7 +55,7 @@ export default function About() {
             className="w-full h-full"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-800/50 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent pointer-events-none" />
         </div>
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white bg-white/20 p-6 rounded-lg">
@@ -97,13 +97,13 @@ export default function About() {
           <div className="relative z-10 max-w-4xl mx-auto text-center py-16 px-4">
             <h2 className="text-3xl font-bold mb-8 text-decorated-center relative pb-6">A Legacy of Excellence</h2>
             <div className="bg-white/80 backdrop-blur p-8 rounded-xl shadow-lg card-enhanced">
-              <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full">
-                <span className="text-sm font-semibold text-blue-700">🌟 Part of Village 60 Plus Family</span>
+              <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-secondary/20 to-accent/40 rounded-full">
+                <span className="text-sm font-semibold text-primary">🌟 Part of Village 60 Plus Family</span>
               </div>
               <p className="text-xl text-gray-700 leading-relaxed">
               Platinum 60 by Eleete Concepts proudly operates as a subsidiary of Village 60 Plus, one of Sri Lanka's most respected names in eldercare. With a long-standing legacy of delivering compassionate, person-centred senior living and residential services across Colombo, Village 60 Plus has set the benchmark for care rooted in dignity, clinical excellence, and empathy.
               </p>
-              <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto my-6 rounded-full"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-accent to-secondary mx-auto my-6 rounded-full"></div>
               <p className="text-lg text-gray-600 leading-relaxed">
               Platinum 60 by Eleete Concepts extends this legacy into the UK by bringing the same high standards directly into people's homes — combining our parent company's foundational principles with local insight and modern innovation.
               </p>
@@ -118,8 +118,8 @@ export default function About() {
               {achievements.map((achievement, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all hover:-translate-y-1 card-enhanced group">
                   <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">{index % 6 === 0 ? '🤝' : index % 6 === 1 ? '✨' : index % 6 === 2 ? '🎯' : index % 6 === 3 ? '💎' : index % 6 === 4 ? '🌱' : '👨‍👩‍👧‍👦'}</div>
-                  <div className="text-lg font-bold mb-2 text-gray-800 group-hover:text-blue-600 transition-colors">{achievement.label}</div>
-                  <div className="w-12 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
+                  <div className="text-lg font-bold mb-2 text-gray-800 group-hover:text-accent transition-colors">{achievement.label}</div>
+                  <div className="w-12 h-1 bg-gradient-to-r from-accent to-secondary mx-auto rounded-full"></div>
                 </div>
               ))}
             </div>
@@ -138,15 +138,15 @@ export default function About() {
                   alt="Compassion"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/80" />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/80" />
               </div>
               <div className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mb-6 -mt-16 relative z-10 border-4 border-white shadow-lg">
-                  <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-16 h-16 bg-gradient-to-br from-secondary/30 to-secondary/60 rounded-full flex items-center justify-center mb-6 -mt-16 relative z-10 border-4 border-white shadow-lg">
+                  <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-4 group-hover:text-blue-600 transition-colors">Compassion</h3>
+                <h3 className="text-xl font-bold mb-4 group-hover:text-accent transition-colors">Compassion</h3>
                 <p className="text-gray-600 leading-relaxed">
                 What truly sets us apart is how deeply we care. Every individual we support is unique — and so is the care we provide. From personal assistance and daily companionship to complex dementia care and palliative support, our services are tailored with empathy and flexibility to meet evolving needs.  
                 </p>
@@ -159,15 +159,15 @@ export default function About() {
                   alt="Excellence"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/80" />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/80" />
               </div>
               <div className="p-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center mb-6 -mt-16 relative z-10 border-4 border-white shadow-lg">
-                  <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-16 h-16 bg-gradient-to-br from-secondary/20 to-accent/40 rounded-full flex items-center justify-center mb-6 -mt-16 relative z-10 border-4 border-white shadow-lg">
+                  <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-4 group-hover:text-purple-600 transition-colors">Excellence</h3>
+                <h3 className="text-xl font-bold mb-4 group-hover:text-accent transition-colors">Excellence</h3>
                 <p className="text-gray-600 leading-relaxed">
                 We also embrace the future of care. By integrating AI-powered systems, we enhance the quality and responsiveness of our services. Families can stay informed in real-time, and care
                 plans can adapt quickly — giving our carers more tools to care better, and giving families peace of mind.
@@ -181,7 +181,7 @@ export default function About() {
                   alt="Trust"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900/80" />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/80" />
               </div>
               <div className="p-8">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center mb-6 -mt-16 relative z-10 border-4 border-white shadow-lg">
@@ -218,7 +218,7 @@ export default function About() {
                       <div className="inline-block mb-2 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full">
                         <span className="text-xs font-semibold">👥 Our People</span>
                       </div>
-                      <h3 className="text-2xl font-bold mb-2 group-hover:text-blue-300 transition-colors">Meet the Team</h3>
+                      <h3 className="text-2xl font-bold mb-2 group-hover:text-accent transition-colors">Meet the Team</h3>
                       <p className="text-gray-200">Get to know the compassionate people behind Eleete</p>
                     </div>
                   </div>
@@ -238,7 +238,7 @@ export default function About() {
                       <div className="inline-block mb-2 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full">
                         <span className="text-xs font-semibold">💬 Reviews</span>
                       </div>
-                      <h3 className="text-2xl font-bold mb-2 group-hover:text-blue-300 transition-colors">What Our Clients Say</h3>
+                      <h3 className="text-2xl font-bold mb-2 group-hover:text-accent transition-colors">What Our Clients Say</h3>
                       <p className="text-gray-200">Read stories from the families we've helped</p>
                     </div>
                   </div>

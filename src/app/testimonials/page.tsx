@@ -76,7 +76,7 @@ export default function Testimonials() {
             priority
             className="w-full h-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/60 via-blue-900/40 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent pointer-events-none" />
         </div>
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white">
@@ -92,11 +92,11 @@ export default function Testimonials() {
 
       <div className="container mx-auto px-4">
         {/* Introduction */}
-        <section className="mb-24 bg-gradient-to-br from-blue-50 via-white to-purple-50 py-16 rounded-3xl">
+        <section className="mb-24 bg-gradient-to-br from-background via-white to-secondary/40 py-16 rounded-3xl">
           <div className="max-w-4xl mx-auto text-center px-4">
             <h2 className="text-3xl font-bold mb-8 text-decorated-center relative pb-6">Voices of Trust</h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-4">
-              At Eleete, the kind words of our clients and their families mean everything to us.
+              At Platinum 60 by Eleete Concepts, the kind words of our clients and their families mean everything to us.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed mb-4">
               Each testimonial reflects the trust, connection, and care we strive to build every day — whether it's a reassuring smile, a helping hand, or simply being there when it matters most.
@@ -114,7 +114,7 @@ export default function Testimonials() {
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all card-enhanced group">
                   <div className="flex items-start mb-6">
-                    <div className="relative w-16 h-16 mr-4 flex-shrink-0 rounded-full overflow-hidden ring-4 ring-blue-100">
+                    <div className="relative w-16 h-16 mr-4 flex-shrink-0 rounded-full overflow-hidden ring-4 ring-secondary/40">
                       <CustomImage
                         src={testimonial.image}
                         alt={testimonial.name}
@@ -122,8 +122,8 @@ export default function Testimonials() {
                       />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-1 group-hover:text-blue-600 transition-colors">{testimonial.name}</h3>
-                      <p className="text-blue-600 font-semibold text-sm">{testimonial.role}</p>
+                      <h3 className="text-xl font-bold mb-1 group-hover:text-accent transition-colors">{testimonial.name}</h3>
+                      <p className="text-accent font-semibold text-sm">{testimonial.role}</p>
                       <p className="text-gray-500 text-sm">{testimonial.location}</p>
                     </div>
                   </div>
@@ -135,7 +135,7 @@ export default function Testimonials() {
                     ))}
                   </div>
                   <div className="relative">
-                    <svg className="absolute -top-2 -left-2 w-8 h-8 text-blue-200" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="absolute -top-2 -left-2 w-8 h-8 text-secondary/40" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                     </svg>
                     <blockquote className="text-gray-700 italic pl-6 leading-relaxed">"{testimonial.quote}"</blockquote>
@@ -147,20 +147,20 @@ export default function Testimonials() {
         </section>
 
         {/* CTA Section */}
-        <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen text-center mb-24 py-20 bg-gradient-to-br from-white via-blue-50 to-purple-50">
+        <section className="relative left-1/2 right-1/2 -mx-[50vw] w-screen text-center mb-24 py-20 bg-gradient-to-br from-white via-background to-secondary/40">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-6 text-decorated-center relative pb-6">Experience the Eleete Difference</h2>
             <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">Ready to receive the same compassionate care our clients talk about? Get in touch with us today.</p>
             <div className="space-x-4">
               <Link
                 href="/contact"
-                className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105 shadow-lg"
+                className="inline-block bg-gradient-to-r from-primary to-accent text-white px-8 py-3 rounded-lg hover:from-primary hover:to-primary transition-all hover:scale-105 shadow-lg"
               >
                 Contact Us
               </Link>
               <Link
                 href="/services"
-                className="inline-block bg-white text-blue-900 border-2 border-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors"
+                className="inline-block bg-white text-primary border-2 border-secondary/60 px-8 py-3 rounded-lg hover:bg-background transition-colors"
               >
                 Our Services
               </Link>

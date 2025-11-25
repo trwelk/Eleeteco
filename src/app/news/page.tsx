@@ -34,8 +34,8 @@ export default function News() {
     <div className="space-y-16">
       {/* Hero Section */}
       <section className="relative h-[400px] w-full">
-        <div className="absolute inset-0 bg-blue-900">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/70" />
+        <div className="absolute inset-0 bg-primary">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white">
@@ -88,7 +88,7 @@ export default function News() {
                     alt={news.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
+                  <div className="absolute top-4 left-4 bg-accent text-primary px-3 py-1 rounded-full text-sm">
                     {news.category}
                   </div>
                 </div>
@@ -96,9 +96,9 @@ export default function News() {
                   <div className="text-sm text-gray-500 mb-2">{news.date}</div>
                   <h3 className="text-xl font-semibold mb-3">{news.title}</h3>
                   <p className="text-gray-600 mb-4">{news.excerpt}</p>
-                  <Link 
+                    <Link 
                     href="#" 
-                    className="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center"
+                    className="text-accent hover:text-primary font-medium inline-flex items-center"
                   >
                     Read more
                     <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -113,7 +113,7 @@ export default function News() {
 
         {/* Newsletter Section */}
         <section className="max-w-4xl mx-auto">
-          <div className="bg-blue-50 p-8 rounded-xl text-center">
+          <div className="bg-background p-8 rounded-xl text-center">
             <h2 className="text-2xl font-bold mb-4">Stay Updated</h2>
             <p className="text-gray-600 mb-6">
               Subscribe to our newsletter to receive the latest news and updates directly in your inbox.
@@ -122,9 +122,9 @@ export default function News() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="flex-1 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent"
               />
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+              <button className="bg-accent text-primary px-6 py-2 rounded-lg hover:bg-primary hover:text-background transition-colors">
                 Subscribe
               </button>
             </div>

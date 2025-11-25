@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/40 flex items-center justify-center px-4">
       <div className="max-w-2xl w-full text-center">
         <div className="mb-8">
-          <h1 className="text-9xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h1 className="text-9xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             404
           </h1>
         </div>
@@ -22,7 +22,7 @@ export default function NotFound() {
           <div className="space-y-4">
             <Link
               href="/"
-              className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105 shadow-lg font-medium"
+              className="inline-block bg-gradient-to-r from-primary to-accent text-white px-8 py-3 rounded-lg hover:from-primary hover:to-primary transition-all hover:scale-105 shadow-lg font-medium"
             >
               Return to Homepage
             </Link>
@@ -30,13 +30,13 @@ export default function NotFound() {
             <div className="mt-6">
               <p className="text-sm text-gray-500 mb-3">Quick Links:</p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/services" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/services" className="text-accent hover:text-primary font-medium">
                   Our Services
                 </Link>
-                <Link href="/about" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/about" className="text-accent hover:text-primary font-medium">
                   About Us
                 </Link>
-                <Link href="/contact" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/contact" className="text-accent hover:text-primary font-medium">
                   Contact
                 </Link>
               </div>
@@ -46,7 +46,7 @@ export default function NotFound() {
         
         <p className="mt-8 text-gray-500 text-sm">
           If you believe this is an error, please{' '}
-          <Link href="/contact" className="text-blue-600 hover:text-blue-800 font-medium">
+          <Link href="/contact" className="text-accent hover:text-primary font-medium">
             contact us
           </Link>
         </p>

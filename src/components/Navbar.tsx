@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface NavItem {
   name: string;
@@ -26,16 +27,19 @@ const Navbar = () => {
         { name: 'Who We Support', path: '/services/who-we-support' }
       ]
     },
+    { name: 'Careers', path: '/careers' },
     {
       name: 'About Us',
       path: '/about',
       children: [
         { name: 'About Eleete', path: '/about' },
         { name: 'Meet the Team', path: '/team' },
-        { name: 'Testimonials', path: '/testimonials' }
-      ]
+        { name: 'What Our Clients Say', path: '/testimonials' },
+      ],
     },
-    { name: 'Careers', path: '/careers' },
+    { name: 'News', path: '/news' },
+    { name: 'FAQ', path: '/faq' },
+    { name: 'Your Rights', path: '/rights' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -48,14 +52,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-primary text-white shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold">
-              <span className="text-blue-600">Platinum 60</span>
-              <span className="text-gray-800"> by Eleete Concepts</span>
-            </div>
+            <Image
+              src="/images/main_logo.jpeg"
+              alt="Platinum 60 by Eleete Concepts logo"
+              width={160}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
+            <span className="sr-only">Platinum 60 by Eleete Concepts</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -69,7 +78,7 @@ const Navbar = () => {
               >
                 <Link
                   href={item.path}
-                  className="text-gray-600 hover:text-gray-900 transition-colors py-4"
+                  className="text-secondary hover:text-accent transition-colors py-4"
                 >
                   {item.name}
                   {item.children && (
@@ -89,12 +98,12 @@ const Navbar = () => {
                   )}
                 </Link>
                 {item.children && activeDropdown === item.name && (
-                  <div className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-lg py-2 z-50">
+                  <div className="absolute left-0 mt-2 w-56 bg-primary rounded-lg shadow-lg py-2 z-50 border border-secondary/40">
                     {item.children.map((child) => (
                       <Link
                         key={child.path}
                         href={child.path}
-                        className="block px-4 py-2 text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
+                        className="block px-4 py-2 text-secondary hover:bg-background/10 hover:text-accent transition-colors"
                       >
                         {child.name}
                       </Link>
@@ -107,7 +116,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden text-secondary hover:text-accent"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg
@@ -130,12 +139,12 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4">
+          <div className="md:hidden py-4 bg-primary">
             {navItems.map((item) => (
               <div key={item.path}>
                 <Link
                   href={item.path}
-                  className="block py-2 text-gray-600 hover:text-gray-900 transition-colors"
+                  className="block py-2 text-secondary hover:text-accent transition-colors"
                   onClick={() => {
                     if (!item.children) {
                       setIsMenuOpen(false);
