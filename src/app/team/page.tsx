@@ -60,7 +60,7 @@ export default function Team() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full overflow-hidden bg-gradient-to-r from-background to-secondary/60">
+      <section className="relative h-[500px] w-full overflow-hidden bg-gradient-to-r from-background to-secondary/60">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
             src="/images/1.jpeg"

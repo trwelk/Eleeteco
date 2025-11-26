@@ -42,7 +42,7 @@ export default function Careers() {
   return (
     <div className="space-y-16">
       {/* Hero Section - light overlay, full-width content panel */}
-      <section className="relative h-[520px] w-full overflow-hidden">
+      <section className="relative h-[500px] w-full overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
             src="/images/9.jpeg"
@@ -81,7 +81,7 @@ export default function Careers() {
                   <span className="text-sm font-semibold text-primary">🌟 Join Our Team</span>
                 </div>
                 <p className="text-xl text-gray-700 leading-relaxed mb-8">
-                  At Eleete Concepts, we don't just provide care, we build relationships, change lives, and make a lasting difference in our community. If you're someone who leads with empathy, takes pride in their work, and believes that every person deserves to be treated with dignity, then you'll feel right at home here.
+                  At Platinum 60 by Eleete Concepts, we don't just provide care, we build relationships, change lives, and make a lasting difference in our community. If you're someone who leads with empathy, takes pride in their work, and believes that every person deserves to be treated with dignity, then you'll feel right at home here.
                 </p>
 
                 <div className="w-24 h-1 bg-gradient-to-r from-accent to-secondary mx-auto my-6 rounded-full"></div>
@@ -107,7 +107,7 @@ export default function Careers() {
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-3xl font-bold mb-4 text-center text-decorated-center relative pb-6">Current Vacancies</h2>
             <p className="text-xl text-gray-600 mb-8 text-center max-w-2xl mx-auto">
-              Looking to start a meaningful career in care? Join us at Eleete Concepts and be part of a team that's changing lives — one visit, one conversation, one act of kindness at a time.
+              Looking to start a meaningful career in care? Join us at Platinum 60 by Eleete Concepts and be part of a team that's changing lives — one visit, one conversation, one act of kindness at a time.
             </p>
             <div className="grid gap-6">
               {currentVacancies.map((job, index) => (
@@ -149,7 +149,7 @@ export default function Careers() {
             <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Hear from our team members</p>
             <div className="bg-white p-8 rounded-xl shadow-lg corner-accent card-enhanced">
               <p className="text-gray-700 mb-6">
-                At Eleete Concepts, our team is the heart of everything we do. Behind every care visit is a person who shows up with compassion, professionalism, and a genuine desire to help others live better, more independent lives.
+                At Platinum 60 by Eleete Concepts, our team is the heart of everything we do. Behind every care visit is a person who shows up with compassion, professionalism, and a genuine desire to help others live better, more independent lives.
               </p>
               <p className="text-gray-700 mb-6">
                 This page is a space where our carers and team members share their stories — in their own words. What it's like to make a difference. How it feels to be part of a supportive, values-driven team. And why working at Eleete is more than just a job.

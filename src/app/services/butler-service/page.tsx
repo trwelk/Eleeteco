@@ -143,7 +143,7 @@ export default function ButlerService() {
               <span className="text-sm font-semibold text-primary">🧤 Butler Service: Personalised Support</span>
             </div>
             <p className="text-xl text-gray-800 leading-relaxed max-w-4xl mb-4">
-              At Eleete Concepts Ltd, we understand that the little things make a big difference in maintaining independence and comfort at home. 
+              At Platinum 60 by Eleete Concepts Ltd, we understand that the little things make a big difference in maintaining independence and comfort at home. 
               Our Butler Service is designed to provide personalised assistance that helps you manage daily tasks effortlessly, giving you more time to enjoy what matters most.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">

@@ -44,7 +44,7 @@ export default function CareAtHome() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden bg-gradient-to-r from-background to-secondary/60">
+      <section className="relative h-[500px] w-full overflow-hidden bg-gradient-to-r from-background to-secondary/60">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
             src="/images/3.jpeg"

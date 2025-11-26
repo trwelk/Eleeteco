@@ -2,22 +2,28 @@
 
 import React from 'react';
 import Link from 'next/link';
+import CustomImage from '@/components/CustomImage';
 
 export default function Rights() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[300px] w-full">
-        <div className="absolute inset-0 bg-primary">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+      <section className="relative h-[500px] w-full overflow-hidden">
+        <div className="absolute inset-0 w-full h-full">
+          <CustomImage
+            src="/images/20.jpeg"
+            alt="Know your rights background"
+            className="w-full h-full"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent pointer-events-none" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-3xl text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <div className="max-w-3xl text-white bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Know Your Rights
             </h1>
-            <p className="text-xl text-gray-100">
-              Understanding and protecting your rights in domiciliary care
+            <p className="text-xl text-gray-100 leading-relaxed">
+              Clear, accessible guidance on your rights in domiciliary care — and how we help protect them.
             </p>
           </div>
         </div>

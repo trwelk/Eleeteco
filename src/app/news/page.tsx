@@ -33,17 +33,22 @@ export default function News() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full">
-        <div className="absolute inset-0 bg-primary">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+      <section className="relative h-[500px] w-full overflow-hidden">
+        <div className="absolute inset-0 w-full h-full">
+          <CustomImage
+            src="/images/19.jpeg"
+            alt="News and updates background"
+            className="w-full h-full"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent pointer-events-none" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-3xl text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              News & Info
+          <div className="max-w-3xl text-white bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              News &amp; Insights
             </h1>
-            <p className="text-xl text-gray-100">
-              Stay updated with the latest from Eleete Concepts
+            <p className="text-xl text-gray-100 leading-relaxed">
+              Stay updated with the latest stories, guidance, and service updates from Platinum 60 by Eleete Concepts.
             </p>
           </div>
         </div>
@@ -55,7 +60,7 @@ export default function News() {
           <div className="bg-white p-8 rounded-xl shadow-lg">
             <h2 className="text-3xl font-bold mb-6">Welcome to our News & Info Hub</h2>
             <p className="text-gray-600 text-lg mb-6">
-              Your go-to space for updates, insights, and helpful resources from Eleete Concepts.
+              Your go-to space for updates, insights, and helpful resources from Platinum 60 by Eleete Concepts.
             </p>
             <p className="text-gray-600 mb-8">
               Here, we'll share:

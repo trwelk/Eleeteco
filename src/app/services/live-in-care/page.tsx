@@ -9,7 +9,7 @@ export default function LiveInCare() {
   return (
     <div className="space-y-0">
       {/* HERO - Full bleed */}
-      <section className="relative h-[70vh] w-full mb-12 md:mb-16 overflow-hidden">
+      <section className="relative h-[500px] w-full mb-12 md:mb-16 overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage src="/images/2.jpeg" alt="Live-In Care" className="w-full h-full" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent pointer-events-none" />
