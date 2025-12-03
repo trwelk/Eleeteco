@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import CustomImage from '@/components/CustomImage';
 
 type FAQItem = {
   question: string;
@@ -354,15 +353,8 @@ const FAQPage: React.FC = () => {
   return (
     <div className="space-y-16">
       {/* Hero / Intro */}
-      <section className="relative h-[500px] w-full overflow-hidden">
-        <div className="absolute inset-0 w-full h-full">
-          <CustomImage
-            src="/images/17.jpeg"
-            alt="Platinum 60 FAQ background"
-            className="w-full h-full"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/60 to-transparent pointer-events-none" />
-        </div>
+      <section className="relative h-[320px] w-full overflow-hidden bg-gradient-to-br from-background via-white to-secondary/30">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/70 to-transparent pointer-events-none" />
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-2xl bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md">
             <div className="inline-block mb-3 px-4 py-1.5 bg-secondary/10 rounded-full border border-secondary/40">

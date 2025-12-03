@@ -12,51 +12,51 @@ interface ServiceType {
 }
 
 const mainServices: ServiceType[] = [
-      {
-        title: "Care at Home",
-        description: "Professional care services delivered in the comfort of your own home, tailored to your individual needs and preferences.",
-        link: "/services/care-at-home",
-        icon: (
+  {
+    title: "Care at Home",
+    description: "Professional care services delivered in the comfort of your own home, tailored to your individual needs and preferences.",
+    link: "/services/care-at-home",
+    icon: (
       <svg className="w-12 h-12 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
       </svg>
     )
   },
-      {
-        title: "Live-in Care",
-        description: "24-hour support from a dedicated carer who lives in your home, providing continuous assistance and companionship.",
-        link: "/services/live-in-care",
-        icon: (
+  {
+    title: "Live-in Care",
+    description: "24-hour support from a dedicated carer who lives in your home, providing continuous assistance and companionship.",
+    link: "/services/live-in-care",
+    icon: (
       <svg className="w-12 h-12 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
       </svg>
     )
   },
-      {
-        title: "Butler Service",
-        description: "Personalised assistance to help you manage daily tasks effortlessly, giving you more time to enjoy what matters most.",
-        link: "/services/butler-service",
-        icon: (
+  {
+    title: "Butler Service",
+    description: "Personalised assistance to help you manage daily tasks effortlessly, giving you more time to enjoy what matters most.",
+    link: "/services/butler-service",
+    icon: (
       <svg className="w-12 h-12 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     )
   },
-      {
-        title: "AI-Enhanced Care",
-        description: "Experience the perfect balance of heartfelt service and intelligent innovation with our AI-integrated care solutions.",
-        link: "/services/ai-integration",
-        icon: (
+  {
+    title: "AI-Enhanced Care",
+    description: "Experience the perfect balance of heartfelt service and intelligent innovation with our AI-integrated care solutions.",
+    link: "/services/ai-integration",
+    icon: (
       <svg className="w-12 h-12 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     )
   },
-      {
-        title: "Who We Support",
-        description: "Learn about the different groups we help, from older adults to those with specialised care needs.",
-        link: "/services/who-we-support",
-        icon: (
+  {
+    title: "Who We Support",
+    description: "Learn about the different groups we help, from older adults to those with specialised care needs.",
+    link: "/services/who-we-support",
+    icon: (
       <svg className="w-12 h-12 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
       </svg>
@@ -360,52 +360,52 @@ export default function Services() {
             <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-lg shadow-lg border-2 border-secondary/40">
               <div className="flex flex-col md:flex-row md:items-stretch md:gap-8">
                 <div className="flex-1 space-y-6">
-                  <div>
-                    <label className="block text-gray-700 mb-2">Level of Care Required</label>
-                    <select
-                      className="w-full p-2 border rounded"
-                      value={calculatorInputs.careLevel}
+                <div>
+                  <label className="block text-gray-700 mb-2">Level of Care Required</label>
+                  <select
+                    className="w-full p-2 border rounded"
+                    value={calculatorInputs.careLevel}
                       onChange={(e) => setCalculatorInputs({ ...calculatorInputs, careLevel: e.target.value })}
-                    >
-                      <option value="basic">Basic Care</option>
-                      <option value="intermediate">Intermediate Care</option>
-                      <option value="complex">Complex Care</option>
-                    </select>
-                  </div>
-                  
-                  <div>
-                    <label className="block text-gray-700 mb-2">Hours per Visit</label>
-                    <input
-                      type="number"
-                      min="1"
-                      max="24"
-                      className="w-full p-2 border rounded"
-                      value={calculatorInputs.hoursPerVisit}
+                  >
+                    <option value="basic">Basic Care</option>
+                    <option value="intermediate">Intermediate Care</option>
+                    <option value="complex">Complex Care</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label className="block text-gray-700 mb-2">Hours per Visit</label>
+                  <input
+                    type="number"
+                    min="1"
+                    max="24"
+                    className="w-full p-2 border rounded"
+                    value={calculatorInputs.hoursPerVisit}
                       onChange={(e) => setCalculatorInputs({ ...calculatorInputs, hoursPerVisit: parseInt(e.target.value) })}
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-gray-700 mb-2">Visits per Week</label>
-                    <input
-                      type="number"
-                      min="1"
-                      max="7"
-                      className="w-full p-2 border rounded"
-                      value={calculatorInputs.visitsPerWeek}
+                  />
+                </div>
+                
+                <div>
+                  <label className="block text-gray-700 mb-2">Visits per Week</label>
+                  <input
+                    type="number"
+                    min="1"
+                    max="7"
+                    className="w-full p-2 border rounded"
+                    value={calculatorInputs.visitsPerWeek}
                       onChange={(e) => setCalculatorInputs({ ...calculatorInputs, visitsPerWeek: parseInt(e.target.value) })}
-                    />
+                  />
                   </div>
                 </div>
 
                 <div className="mt-8 md:mt-0 md:w-1/3">
                   <div className="h-full bg-gradient-to-br from-background to-secondary/40 p-6 rounded-lg border-l-4 border-primary flex flex-col justify-center">
-                    <p className="text-lg font-semibold text-gray-700">Estimated Weekly Cost:</p>
+                  <p className="text-lg font-semibold text-gray-700">Estimated Weekly Cost:</p>
                     <p className="text-4xl font-bold text-accent my-2">£{calculateCost()}</p>
                     <div className="w-32 h-1 bg-gradient-to-r from-accent to-secondary rounded-full mb-3"></div>
-                    <p className="text-sm text-gray-600">
-                      *This is an estimate. Contact us for a detailed quote based on your specific needs.
-                    </p>
+                  <p className="text-sm text-gray-600">
+                    *This is an estimate. Contact us for a detailed quote based on your specific needs.
+                  </p>
                   </div>
                 </div>
               </div>

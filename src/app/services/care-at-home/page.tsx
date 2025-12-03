@@ -44,7 +44,7 @@ export default function CareAtHome() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[500px] w-full overflow-hidden bg-gradient-to-r from-background to-secondary/60">
+      <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden bg-gradient-to-r from-background to-secondary/60">
         <div className="absolute inset-0 w-full h-full">
           <CustomImage
             src="/images/3.jpeg"
@@ -82,14 +82,14 @@ export default function CareAtHome() {
               <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-secondary/20 to-accent/40 rounded-full">
                 <span className="text-sm font-semibold text-primary">💙 Personalised Home Care</span>
               </div>
-              <p className="text-xl text-gray-700 leading-relaxed mb-4 max-w-4xl mx-auto">
+              <p className="text-lg text-gray-700 leading-relaxed mb-4 max-w-4xl mx-auto">
                 At Platinum 60 by Eleete Concepts, our Care at Home service is built around a simple belief: people thrive when they can remain in the comfort of their own home, surrounded by familiarity and dignity.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4 max-w-4xl mx-auto">
                 We provide professional, flexible, and respectful support tailored to your individual needs, routines, and lifestyle. Whether you require a little help each day or more regular support, our trained and DBS‑checked carers are here to assist with kindness, discretion, and consistency.
               </p>
               <div className="w-24 h-1 bg-gradient-to-r from-accent to-secondary mx-auto my-6 rounded-full"></div>
-              <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
                 From a little daily help to regular scheduled visits, our team will work with you and your family to build a care plan that feels natural, respectful, and truly supportive.
               </p>
             </div>

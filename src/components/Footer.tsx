@@ -17,9 +17,9 @@ const Footer = () => {
               <Image
                 src="/images/secondary_logo.jpeg"
                 alt="Platinum 60 by Eleete Concepts secondary logo"
-                width={180}
-                height={48}
-                className="h-12 w-auto"
+                width={240}
+                height={64}
+                className="h-16 w-auto"
               />
             </div>
             <p className="text-gray-400 mb-4">

@@ -200,7 +200,7 @@ export default function WhoWeSupport() {
             >
               Request Care Consultation
             </Link>
-              <p className="text-gray-600">
+            <p className="text-gray-600">
               Or speak to our care team in confidence at{' '}
               <a href="mailto:info@eleeteco.uk" className="text-accent hover:text-primary font-medium">
                 info@eleeteco.uk
