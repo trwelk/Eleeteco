@@ -116,11 +116,11 @@ export default function Home() {
         </div>
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white bg-white/20 p-6 rounded-lg">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-up">Platinum 60 by Eleete Concepts</h1>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-up anim-delay-200">
-              Transforming Lives,
-              <br />
-              Restoring Your Health
+            <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-up">
+              Platinum 60 <span className="text-2xl md:text-3xl font-normal opacity-90">by Eleete Concepts</span>
+            </h1>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6 animate-fade-up anim-delay-200">
+              Transforming Lives, Restoring your Independence
             </h2>
             <p className="text-xl mb-8 leading-relaxed animate-fade-up anim-delay-400">
               Professional care services delivered with compassion and expertise, in the comfort of your home.

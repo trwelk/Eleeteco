@@ -43,14 +43,11 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-pattern-1">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-primary via-primary to-accent text-white py-12">
-        {/* Solid primary overlay just on the left side to match logo colour */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-primary" />
-
-        <div className="relative container mx-auto px-4 h-[280px] md:h-[320px] hero-text-enhanced flex flex-col md:flex-row items-center md:items-stretch justify-between gap-8">
-          {/* Logo column – left side, ~1/3 width and ~4/5 height */}
+      <div className="bg-gradient-to-r from-primary via-primary to-accent text-white py-12">
+        <div className="container mx-auto px-4 h-[280px] md:h-[320px] hero-text-enhanced flex flex-col md:flex-row items-center md:items-stretch justify-between gap-8">
+          {/* Logo column – left side, ~1/3 width and ~4/5 height, with solid primary background to match logo */}
           <div className="w-full md:w-1/3 flex items-center justify-center">
-            <div className="h-[220px] md:h-[260px] flex items-center justify-center">
+            <div className="h-[220px] md:h-[260px] flex items-center justify-center bg-primary/95 rounded-3xl px-4">
               <Image
                 src="/images/main_logo.jpeg"
                 alt="Platinum 60 by Eleete Concepts logo"
