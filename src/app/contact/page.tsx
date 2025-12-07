@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -42,19 +43,39 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-pattern-1">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-primary via-primary to-accent text-white py-16">
-        <div className="container mx-auto px-4 text-center hero-text-enhanced">
-          <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-            <span className="text-sm font-medium">📞 Contact Us</span>
+      <div className="relative bg-gradient-to-r from-primary via-primary to-accent text-white py-12">
+        {/* Solid primary overlay just on the left side to match logo colour */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-primary" />
+
+        <div className="relative container mx-auto px-4 h-[280px] md:h-[320px] hero-text-enhanced flex flex-col md:flex-row items-center md:items-stretch justify-between gap-8">
+          {/* Logo column – left side, ~1/3 width and ~4/5 height */}
+          <div className="w-full md:w-1/3 flex items-center justify-center">
+            <div className="h-[220px] md:h-[260px] flex items-center justify-center">
+              <Image
+                src="/images/main_logo.jpeg"
+                alt="Platinum 60 by Eleete Concepts logo"
+                width={260}
+                height={70}
+                className="h-full w-auto object-contain drop-shadow-lg"
+                priority
+              />
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
-          <p className="text-xl text-secondary leading-relaxed">We're here to answer your questions and discuss your care needs</p>
+
+          {/* Text block – right side */}
+          <div className="w-full md:flex-1 text-center md:text-left">
+            <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+              <span className="text-sm font-medium">📞 Contact Us</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
+            <p className="text-xl text-secondary leading-relaxed">
+              We're here to answer your questions and discuss your care needs
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-12 -mt-8"
-
-      >
+      <div className="container mx-auto px-4 py-12 -mt-8">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Information */}
           <div>

@@ -117,12 +117,12 @@ const Navbar = () => {
                     )}
                   </Link>
                   {item.children && activeDropdown === item.name && (
-                    <div className="absolute left-0 mt-3 w-60 bg-primary/98 backdrop-blur-lg rounded-2xl shadow-xl py-2 z-50 border border-secondary/40">
+                    <div className="absolute left-0 mt-3 w-60 bg-white rounded-2xl shadow-xl py-2 z-[100] border border-secondary/40">
                       {item.children.map((child) => (
                         <Link
                           key={child.path}
                           href={child.path}
-                          className="block px-4 py-2 text-sm text-secondary hover:bg-background/10 hover:text-accent transition-colors"
+                          className="block px-4 py-2 text-sm text-primary hover:bg-background hover:text-accent transition-colors"
                         >
                           {child.name}
                         </Link>
