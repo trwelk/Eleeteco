@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 interface NavItem {
   name: string;
@@ -13,6 +14,7 @@ interface NavItem {
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const pathname = usePathname();
 
   const navItems: NavItem[] = [
     { name: 'Home', path: '/' },
@@ -27,6 +29,7 @@ const Navbar = () => {
         { name: 'Who We Support', path: '/services/who-we-support' }
       ]
     },
+    { name: 'Destination Retirement', path: '/destination-retirement' },
     { name: 'Careers', path: '/careers' },
     {
       name: 'About Us',
@@ -51,10 +54,20 @@ const Navbar = () => {
     setActiveDropdown(null);
   };
 
+  const isActive = (item: NavItem) => {
+    if (item.path === '/') {
+      return pathname === '/';
+    }
+    if (item.children) {
+      return pathname.startsWith(item.path);
+    }
+    return pathname.startsWith(item.path);
+  };
+
   return (
-    <nav className="bg-primary text-white shadow-md">
+    <nav className="sticky top-0 z-50 bg-primary/95 backdrop-blur-md border-b border-secondary/30 text-white">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 md:h-20">
           <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/images/main_logo.jpeg"
@@ -68,50 +81,80 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
-              <div
-                key={item.path}
-                className="relative"
-                onMouseEnter={() => handleMouseEnter(item.name)}
-                onMouseLeave={handleMouseLeave}
-              >
-                <Link
-                  href={item.path}
-                  className="text-secondary hover:text-accent transition-colors py-4"
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) => {
+              const active = isActive(item);
+              return (
+                <div
+                  key={item.path}
+                  className="relative"
+                  onMouseEnter={() => handleMouseEnter(item.name)}
+                  onMouseLeave={handleMouseLeave}
                 >
-                  {item.name}
-                  {item.children && (
-                    <svg
-                      className="w-4 h-4 inline-block ml-1"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  )}
-                </Link>
-                {item.children && activeDropdown === item.name && (
-                  <div className="absolute left-0 mt-2 w-56 bg-primary rounded-lg shadow-lg py-2 z-50 border border-secondary/40">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.path}
-                        href={child.path}
-                        className="block px-4 py-2 text-secondary hover:bg-background/10 hover:text-accent transition-colors"
+                  <Link
+                    href={item.path}
+                    className={`relative px-3 py-2 text-sm font-medium rounded-full transition-colors ${
+                      active
+                        ? 'text-accent bg-background/10'
+                        : 'text-secondary hover:text-accent hover:bg-background/10'
+                    }`}
+                  >
+                    {item.name}
+                    {item.children && (
+                      <svg
+                        className="w-4 h-4 inline-block ml-1"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
                       >
-                        {child.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    )}
+                  </Link>
+                  {item.children && activeDropdown === item.name && (
+                    <div className="absolute left-0 mt-3 w-60 bg-primary/98 backdrop-blur-lg rounded-2xl shadow-xl py-2 z-50 border border-secondary/40">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.path}
+                          href={child.path}
+                          className="block px-4 py-2 text-sm text-secondary hover:bg-background/10 hover:text-accent transition-colors"
+                        >
+                          {child.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Desktop CTA */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Link
+              href="/contact"
+              className="inline-flex items-center px-5 py-2 rounded-full bg-accent text-primary text-sm font-semibold shadow-sm hover:bg-primary hover:text-background transition-colors"
+            >
+              Book a Consultation
+              <svg
+                className="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -139,36 +182,47 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 bg-primary">
-            {navItems.map((item) => (
-              <div key={item.path}>
-                <Link
-                  href={item.path}
-                  className="block py-2 text-secondary hover:text-accent transition-colors"
-                  onClick={() => {
-                    if (!item.children) {
-                      setIsMenuOpen(false);
-                    }
-                  }}
-                >
-                  {item.name}
-                </Link>
-                {item.children && (
-                  <div className="pl-4">
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.path}
-                        href={child.path}
-                        className="block py-2 text-gray-600 hover:text-gray-900 transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        {child.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+          <div className="md:hidden py-4 bg-primary/98 backdrop-blur-md border-t border-secondary/30">
+            <div className="space-y-2">
+              {navItems.map((item) => (
+                <div key={item.path}>
+                  <Link
+                    href={item.path}
+                    className="block py-2 text-secondary hover:text-accent transition-colors"
+                    onClick={() => {
+                      if (!item.children) {
+                        setIsMenuOpen(false);
+                      }
+                    }}
+                  >
+                    {item.name}
+                  </Link>
+                  {item.children && (
+                    <div className="pl-4">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.path}
+                          href={child.path}
+                          className="block py-1.5 text-sm text-secondary hover:text-accent transition-colors"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          {child.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+            <div className="mt-4 pt-4 border-t border-secondary/30">
+              <Link
+                href="/contact"
+                className="block w-full text-center px-4 py-2 rounded-full bg-accent text-primary font-semibold hover:bg-primary hover:text-background transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Book a Consultation
+              </Link>
+            </div>
           </div>
         )}
       </div>

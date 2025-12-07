@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import CustomImage from '@/components/CustomImage';
 
 type FAQItem = {
   question: string;
@@ -353,17 +354,29 @@ const FAQPage: React.FC = () => {
   return (
     <div className="space-y-16">
       {/* Hero / Intro */}
-      <section className="relative h-[320px] w-full overflow-hidden bg-gradient-to-br from-background via-white to-secondary/30">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/70 to-transparent pointer-events-none" />
+      <section className="relative h-[500px] w-full overflow-hidden">
+        <div className="absolute inset-0 w-full h-full">
+          <CustomImage
+            src="/images/17.jpeg"
+            alt="Family discussing care options at home"
+            className="w-full h-full"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent pointer-events-none" />
+        </div>
         <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-2xl bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md">
+          <div className="max-w-2xl bg-white/85 backdrop-blur-md p-6 md:p-8 rounded-2xl shadow-xl border border-secondary/40">
             <div className="inline-block mb-3 px-4 py-1.5 bg-secondary/10 rounded-full border border-secondary/40">
-              <span className="text-sm font-semibold text-primary">📚 Frequently Asked Questions</span>
+              <span className="text-sm font-semibold text-primary">
+                📚 Frequently Asked Questions
+              </span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-3">Platinum 60 Care FAQs</h1>
-            <p className="text-gray-700 leading-relaxed">
-              Find clear answers to the most common questions about our services, pricing, quality, and how we work with
-              you and your family.
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
+              Platinum 60 Care FAQs
+            </h1>
+            <p className="text-gray-700">
+              Find clear, reassuring answers to the most common questions about our
+              services, pricing, quality, and how we work with you and your family.
             </p>
           </div>
         </div>

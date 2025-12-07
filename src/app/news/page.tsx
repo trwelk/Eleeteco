@@ -33,17 +33,24 @@ export default function News() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full">
-        <div className="absolute inset-0 bg-primary">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
+      <section className="relative h-[500px] w-full overflow-hidden">
+        <div className="absolute inset-0 w-full h-full">
+          <CustomImage
+            src="/images/19.jpeg"
+            alt="News and updates from Eleete Concepts"
+            className="w-full h-full"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex items-center">
           <div className="max-w-3xl text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              News & Info
+              News &amp; Info
             </h1>
-            <p className="text-xl text-gray-100">
-              Stay updated with the latest from Eleete Concepts
+            <p className="text-lg md:text-xl text-gray-100 max-w-xl">
+              Stay updated with the latest news, stories, and insights from Platinum 60
+              by Eleete Concepts.
             </p>
           </div>
         </div>

@@ -2,13 +2,20 @@
 
 import React from 'react';
 import Link from 'next/link';
+import CustomImage from '@/components/CustomImage';
 
 export default function Rights() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative h-[300px] w-full">
-        <div className="absolute inset-0 bg-primary">
+      <section className="relative h-[500px] w-full overflow-hidden">
+        <div className="absolute inset-0 w-full h-full">
+          <CustomImage
+            src="/images/20.jpeg"
+            alt="Client discussing rights and care options"
+            className="w-full h-full"
+            priority
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex items-center">
@@ -16,8 +23,8 @@ export default function Rights() {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Know Your Rights
             </h1>
-            <p className="text-xl text-gray-100">
-              Understanding and protecting your rights in domiciliary care
+            <p className="text-lg md:text-xl text-gray-100 max-w-xl">
+              Understanding and protecting your rights when receiving care at home.
             </p>
           </div>
         </div>
