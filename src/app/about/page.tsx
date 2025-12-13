@@ -79,10 +79,10 @@ export default function About() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8 text-decorated-center relative pb-6">Our Mission</h2>
             <div className="bg-white p-8 rounded-xl shadow-lg corner-accent">
-              <p className="text-xl text-gray-700 leading-relaxed mb-4 bg-gray-50 p-4 rounded-lg">
+              <p className="text-lg text-gray-700 leading-relaxed mb-4 bg-gray-50 p-4 rounded-lg">
               At Platinum 60 by Eleete Concepts Ltd, care is more than a service — it's a relationship built on trust, compassion, and dignity. As a Dorset-based domiciliary care provider, we are committed to supporting individuals in living independently at home, surrounded by comfort, familiarity, and the people they love.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
               Whether it's helping an elderly parent with daily routines, offering companionship, or supporting someone recovering from illness or managing a complex condition, we're here — with gentle hands, kind hearts, and professional care.
               </p>
             </div>

@@ -88,8 +88,7 @@ export default function CareAtHome() {
               <p className="text-lg text-gray-700 leading-relaxed mb-4 max-w-4xl mx-auto">
                 We provide professional, flexible, and respectful support tailored to your individual needs, routines, and lifestyle. Whether you require a little help each day or more regular support, our trained and DBS‑checked carers are here to assist with kindness, discretion, and consistency.
               </p>
-              <div className="w-24 h-1 bg-gradient-to-r from-accent to-secondary mx-auto my-6 rounded-full"></div>
-              <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+              <p className="text-lg text-gray-700 leading-relaxed mb-4 max-w-4xl mx-auto">
                 From a little daily help to regular scheduled visits, our team will work with you and your family to build a care plan that feels natural, respectful, and truly supportive.
               </p>
             </div>

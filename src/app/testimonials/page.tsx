@@ -95,13 +95,13 @@ export default function Testimonials() {
         <section className="mb-24 bg-gradient-to-br from-background via-white to-secondary/40 py-16 rounded-3xl">
           <div className="max-w-4xl mx-auto text-center px-4">
             <h2 className="text-3xl font-bold mb-8 text-decorated-center relative pb-6">Voices of Trust</h2>
-            <p className="text-xl text-gray-700 leading-relaxed mb-4">
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
               At Platinum 60 by Eleete Concepts, the kind words of our clients and their families mean everything to us.
             </p>
-            <p className="text-xl text-gray-700 leading-relaxed mb-4">
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
               Each testimonial reflects the trust, connection, and care we strive to build every day — whether it's a reassuring smile, a helping hand, or simply being there when it matters most.
             </p>
-            <p className="text-xl text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               We're honoured to share these stories, and grateful for the chance to walk alongside those we care for. Their voices remind us why we do what we do.
             </p>
           </div>

@@ -78,8 +78,8 @@ export default function AIIntegration() {
             <div className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/70 to-white/50 pointer-events-none" />
           </div>
           <div className="relative z-10 p-8 md:p-10">
-            <p className="text-xl text-gray-700 leading-relaxed max-w-4xl">
-              At Platinum 60 by Eleete Concepts Ltd, we believe the future of care lies in the perfect balance between heartfelt service and intelligent innovation. That's why we are proud to integrate SenzCare.AI, a cutting-edge, AI-driven care management platform by SenzMate, into our service delivery.
+          <p className="text-lg text-gray-700 leading-relaxed mb-4 max-w-4xl mx-auto">
+          At Platinum 60 by Eleete Concepts Ltd, we believe the future of care lies in the perfect balance between heartfelt service and intelligent innovation. That's why we are proud to integrate SenzCare.AI, a cutting-edge, AI-driven care management platform by SenzMate, into our service delivery.
             </p>
           </div>
         </section>

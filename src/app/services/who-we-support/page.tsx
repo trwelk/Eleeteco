@@ -151,11 +151,11 @@ export default function WhoWeSupport() {
         <div className="relative z-10 container mx-auto px-4 py-12">
           <div className="max-w-5xl bg-white/80 backdrop-blur p-8 rounded-xl shadow-lg mx-auto">
             <h2 className="text-3xl font-bold mb-6 text-primary">Who We Support</h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-lg text-gray-700 mb-4">
               At Platinum 60 by Eleete Concepts, we understand that inviting care into your home is a deeply personal decision — one that requires trust, professionalism, and sensitivity. 
               That’s why we tailor every care plan to reflect not just medical needs, but personal values, family dynamics, and individual preferences.
             </p>
-            <p className="text-gray-700">
+            <p className="text-lg text-gray-700">
               We proudly support a wide range of individuals, each with unique circumstances. Whether your needs are temporary, progressive, or complex, 
               our team is equipped with the experience, training, and compassion to provide care that is both clinically sound and emotionally supportive.
             </p>

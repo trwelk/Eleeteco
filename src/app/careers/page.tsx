@@ -80,7 +80,7 @@ export default function Careers() {
                 <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-secondary/20 to-accent/40 rounded-full">
                   <span className="text-sm font-semibold text-primary">🌟 Join Our Team</span>
                 </div>
-                <p className="text-xl text-gray-700 leading-relaxed mb-8">
+                <p className="text-gray-700 leading-relaxed mb-8">
                   At Eleete Concepts, we don't just provide care, we build relationships, change lives, and make a lasting difference in our community. If you're someone who leads with empathy, takes pride in their work, and believes that every person deserves to be treated with dignity, then you'll feel right at home here.
                 </p>
 
@@ -106,7 +106,7 @@ export default function Careers() {
         <section className="mb-24 bg-pattern-2 py-16 rounded-3xl floating-shapes" id="current-vacancies">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-3xl font-bold mb-4 text-center text-decorated-center relative pb-6">Current Vacancies</h2>
-            <p className="text-xl text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 mb-8 text-center max-w-2xl mx-auto">
               Looking to start a meaningful career in care? Join us at Eleete Concepts and be part of a team that's changing lives — one visit, one conversation, one act of kindness at a time.
             </p>
             <div className="grid gap-6">

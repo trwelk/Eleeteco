@@ -87,15 +87,15 @@ export default function Team() {
         <section className="mb-16">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Dedicated to Your Care</h2>
-            <p className="text-xl text-gray-600 leading-relaxed mb-4">
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
               Our team combines clinical excellence with genuine compassion. Each member is 
               carefully selected not just for their qualifications, but for their empathy, 
               patience, and commitment to making a real difference in people's lives.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed mb-3">
+            <p className="text-lg text-gray-700 leading-relaxed mb-3">
               Behind every visit, every conversation, and every act of care at Platinum 60 is a team of people who genuinely love what they do.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               Our caregivers, coordinators, and support staff come from diverse backgrounds, but share one common value: compassion. 
               Each member of our team is highly trained and DBS‑checked, and chosen for their warmth, empathy, and dedication to personal, respectful, deeply human care. 
               We’re proud to work together not just as colleagues, but as a family — united by a mission to provide care that truly feels like it was made for you.

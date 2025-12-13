@@ -47,7 +47,7 @@ export default function LiveInCare() {
         <div className="absolute inset-0 bg-white/40 pointer-events-none" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-10 py-14">
           <div className="max-w-4xl bg-white/70 backdrop-blur rounded-2xl p-6 md:p-8 shadow-md">
-            <p className="text-gray-800 text-lg md:text-xl leading-relaxed">
+            <p className="text-lg text-gray-700  leading-relaxed">
               Live‑in care provides 24‑hour support in the comfort of your own home. A carefully matched, DBS‑checked professional lives with you to offer continuous assistance, warm companionship, and peace of mind — day and night.
             </p>
           </div>
