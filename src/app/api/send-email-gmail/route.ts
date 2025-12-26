@@ -36,7 +36,7 @@ export async function POST(request: Request) {
     // Send email
     const info = await transporter.sendMail({
       from: `"Eleete Contact Form" <${process.env.EMAIL_USER}>`,
-      to: 'weerasooriya.trewon@gmail.com',
+      to: 'info@eleeteco.uk',
       subject: `Contact Form: ${subject}`,
       replyTo: email,
       html: `
