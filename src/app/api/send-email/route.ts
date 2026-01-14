@@ -62,7 +62,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const toEmail = process.env.CONTACT_TO_EMAIL || 'info@eleeteco.uk';
+    const toEmail = 'info@eleeteco.uk';
     const fromEmail = process.env.SMTP_FROM || user;
 
     await transporter.sendMail({
